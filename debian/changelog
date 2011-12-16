@@ -1,3 +1,10 @@
+xorg (1:7.5+8+squeeze2) UNRELEASED; urgency=low
+
+  * Remove long obsolete XF86Config-4 on purge (Closes: #610450). Thanks,
+    Bernhard R. Link!
+
+ -- Cyril Brulebois <kibi@debian.org>  Tue, 18 Jan 2011 20:35:52 +0100
+
 xorg (1:7.5+8+squeeze1) squeeze-security; urgency=low
 
   * xserver-wrapper: when we drop privileges, don't forget to also reset
