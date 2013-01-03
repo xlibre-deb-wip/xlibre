@@ -1,3 +1,15 @@
+xorg (1:7.6+12ubuntu2) precise-proposed; urgency=low
+
+  * Update package to enable support for quantal backport stack (LP: #1095686)
+  * Add xserver-xorg-lts-precise which can be installed to rollback from renamed stack
+    - depends on unrenamed xserver-xorg, recommends unrenamed versions of packages
+  * Allow xserver-xorg-renamed to satisfy xorg's xserver-xorg dependency
+  * Require unrenamed versions of packages in xserver-xorg
+  * Add conflicts/replaces in xserver-xorg to xorg-renamed-package,
+    and provide xserver-xorg-renamed
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Thu, 22 Nov 2012 00:00:43 +0100
+
 xorg (1:7.6+12ubuntu1) precise; urgency=low
 
   * Merge from Debian unstable.
