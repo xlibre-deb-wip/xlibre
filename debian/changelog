@@ -1,3 +1,9 @@
+xorg (1:7.7+3~deb7u1) wheezy; urgency=low
+
+  * Reupload to stable.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 06 May 2013 19:22:00 +0200
+
 xorg (1:7.7+3) unstable; urgency=low
 
   * Add xserver-xorg-input-vmmouse to -all on i386 and amd64 (closes:
