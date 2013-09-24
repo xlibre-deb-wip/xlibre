@@ -1,3 +1,11 @@
+xorg (1:7.7+1ubuntu5) raring; urgency=low
+
+  * Allow xserver-xorg-core-omap-revert and xserver-xorg-video-omap-revert to
+    satisfy depends on armhf.
+    - Allows building a custom armhf server there.
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Tue, 07 May 2013 16:29:10 +0200
+
 xorg (1:7.7+1ubuntu4) quantal; urgency=low
 
   [ Maarten Lankhorst ]
