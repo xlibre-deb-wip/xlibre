@@ -1,3 +1,16 @@
+xorg (1:7.7+1ubuntu6) UNRELEASED; urgency=low
+
+  [ Bryce Harrington ]
+  * scripts/vars.arm*: Don't include -ati or -nouveau, to save
+    installation space.  The drivers build for some arm targets, but no
+    known devices actually work with them.
+
+  [ Christopher James Halse Rogers ]
+  * Drop libgl1-mesa-glx, -dri, and libglu from armhf; these are highly likely
+    to be useless on an armhf system.
+
+ -- Christopher James Halse Rogers <raof@ubuntu.com>  Mon, 18 Feb 2013 16:17:23 +0000
+
 xorg (1:7.7+1ubuntu5) raring; urgency=low
 
   * Allow xserver-xorg-core-omap-revert and xserver-xorg-video-omap-revert to
