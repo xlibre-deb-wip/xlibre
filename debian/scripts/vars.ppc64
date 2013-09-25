@@ -4,7 +4,6 @@
 # This file gets included by both debian/rules (make) AND the scripts in
 # debian/scripts (Bourne shell).
 XSERVER_XORG_VIDEO_DEPENDS="xserver-xorg-video-ati, \
-	xserver-xorg-video-chips, \
 	xserver-xorg-video-fbdev, \
 	xserver-xorg-video-mga, \
 	xserver-xorg-video-r128, \

@@ -5,7 +5,6 @@
 
 XSERVER_XORG_VIDEO_DEPENDS="xserver-xorg-video-apm, \
 	xserver-xorg-video-ark, \
-	xserver-xorg-video-chips, \
 	xserver-xorg-video-cirrus, \
 	xserver-xorg-video-fbdev, \
 	xserver-xorg-video-i128, \
