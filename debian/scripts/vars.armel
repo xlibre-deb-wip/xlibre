@@ -13,18 +13,11 @@ XSERVER_XORG_VIDEO_DEPENDS="xserver-xorg-video-apm, \
 	xserver-xorg-video-i740, \
 	xserver-xorg-video-mga, \
 	xserver-xorg-video-neomagic, \
-	xserver-xorg-video-rendition, \
-	xserver-xorg-video-s3, \
-	xserver-xorg-video-s3virge, \
 	xserver-xorg-video-savage, \
 	xserver-xorg-video-siliconmotion, \
-	xserver-xorg-video-sis, \
 	xserver-xorg-video-sisusb, \
-	xserver-xorg-video-tdfx, \
 	xserver-xorg-video-trident, \
-	xserver-xorg-video-tseng, \
 	xserver-xorg-video-vesa, \
-	xserver-xorg-video-voodoo, \
 "
 
 # xserver-xorg-video-glide,
