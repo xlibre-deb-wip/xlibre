@@ -1,5 +1,6 @@
-xorg (1:7.7+4) UNRELEASED; urgency=low
+xorg (1:7.7+4) unstable; urgency=low
 
+  [ Julien Cristau ]
   * Remove unmaintained drivers from xserver-xorg-video-all:
     - xserver-xorg-video-apm
     - xserver-xorg-video-ark
@@ -20,7 +21,14 @@ xorg (1:7.7+4) UNRELEASED; urgency=low
     - xserver-xorg-video-tseng
     - xserver-xorg-video-voodoo
 
- -- Julien Cristau <jcristau@debian.org>  Mon, 30 Sep 2013 19:36:18 +0200
+  [ Michael Stapelberg ]
+  * report-bugs: tell people to file bugs upstream
+
+  [ Maarten Lankhorst ]
+  * Add xserver-xorg-video-modesetting on amd64 armhf i386.
+  * Add xserver-xorg-video-qxl on amd64 i386.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 30 Sep 2013 19:55:41 +0200
 
 xorg (1:7.7+3) unstable; urgency=low
 
