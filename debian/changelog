@@ -1,3 +1,27 @@
+xorg (1:7.7+4) UNRELEASED; urgency=low
+
+  * Remove unmaintained drivers from xserver-xorg-video-all:
+    - xserver-xorg-video-apm
+    - xserver-xorg-video-ark
+    - xserver-xorg-video-chips
+    - xserver-xorg-video-i128
+    - xserver-xorg-video-i740
+    - xserver-xorg-video-newport
+    - xserver-xorg-video-rendition
+    - xserver-xorg-video-s3
+    - xserver-xorg-video-s3virge
+    - xserver-xorg-video-sis
+    - xserver-xorg-video-suncg14
+    - xserver-xorg-video-suncg3
+    - xserver-xorg-video-suncg6
+    - xserver-xorg-video-sunleo
+    - xserver-xorg-video-suntcx
+    - xserver-xorg-video-tga
+    - xserver-xorg-video-tseng
+    - xserver-xorg-video-voodoo
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 30 Sep 2013 19:36:18 +0200
+
 xorg (1:7.7+3) unstable; urgency=low
 
   * Add xserver-xorg-input-vmmouse to -all on i386 and amd64 (closes:

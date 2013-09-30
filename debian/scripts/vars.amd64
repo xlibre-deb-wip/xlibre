@@ -14,10 +14,10 @@ XSERVER_XORG_VIDEO_DEPENDS=" \
 	xserver-xorg-video-nouveau, \
 	xserver-xorg-video-openchrome, \
 	xserver-xorg-video-qxl, \
-	xserver-xorg-video-r128, \
 	xserver-xorg-video-savage, \
 	xserver-xorg-video-siliconmotion, \
 	xserver-xorg-video-sisusb, \
+	xserver-xorg-video-tdfx, \
 	xserver-xorg-video-trident, \
 	xserver-xorg-video-vesa, \
 	xserver-xorg-video-vmware, \
