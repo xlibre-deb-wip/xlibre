@@ -1,3 +1,10 @@
+xorg (1:7.7+5) UNRELEASED; urgency=medium
+
+  * Add minimal arm64 support (using fbdev/evdev drivers); closes: #731766.
+    Thanks, Wookey!
+
+ -- Julien Cristau <jcristau@debian.org>  Wed, 25 Dec 2013 19:53:43 +0100
+
 xorg (1:7.7+4) unstable; urgency=low
 
   [ Julien Cristau ]
