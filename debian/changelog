@@ -1,4 +1,4 @@
-xorg (1:7.7+1ubuntu8) UNRELEASED; urgency=low
+xorg (1:7.7+5ubuntu1) UNRELEASED; urgency=low
 
   [ Bryce Harrington ]
   * scripts/vars.arm*: Don't include -ati or -nouveau, to save
@@ -10,6 +10,64 @@ xorg (1:7.7+1ubuntu8) UNRELEASED; urgency=low
     to be useless on an armhf system.
 
  -- Christopher James Halse Rogers <raof@ubuntu.com>  Mon, 18 Feb 2013 16:17:23 +0000
+
+xorg (1:7.7+5) unstable; urgency=medium
+
+  * Add minimal arm64 support (using fbdev/evdev drivers); closes: #731766.
+    Thanks, Wookey!
+
+ -- Julien Cristau <jcristau@debian.org>  Wed, 25 Dec 2013 19:56:46 +0100
+
+xorg (1:7.7+4) unstable; urgency=low
+
+  [ Julien Cristau ]
+  * Remove unmaintained drivers from xserver-xorg-video-all:
+    - xserver-xorg-video-apm
+    - xserver-xorg-video-ark
+    - xserver-xorg-video-chips
+    - xserver-xorg-video-i128
+    - xserver-xorg-video-i740
+    - xserver-xorg-video-newport
+    - xserver-xorg-video-rendition
+    - xserver-xorg-video-s3
+    - xserver-xorg-video-s3virge
+    - xserver-xorg-video-sis
+    - xserver-xorg-video-suncg14
+    - xserver-xorg-video-suncg3
+    - xserver-xorg-video-suncg6
+    - xserver-xorg-video-sunleo
+    - xserver-xorg-video-suntcx
+    - xserver-xorg-video-tga
+    - xserver-xorg-video-tseng
+    - xserver-xorg-video-voodoo
+
+  [ Michael Stapelberg ]
+  * report-bugs: tell people to file bugs upstream
+
+  [ Maarten Lankhorst ]
+  * Add xserver-xorg-video-modesetting on amd64 armhf i386.
+  * Add xserver-xorg-video-qxl on amd64 i386.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 30 Sep 2013 19:55:41 +0200
+
+xorg (1:7.7+3) unstable; urgency=low
+
+  * Add xserver-xorg-input-vmmouse to -all on i386 and amd64 (closes:
+    #705637).  Thanks, Jakob Bornecrantz!
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 05 May 2013 08:59:38 +0200
+
+xorg (1:7.7+2) unstable; urgency=low
+
+  [ Maarten Lankhorst ]
+  * Update debian/copyright to refer to new address:
+    - Fixes lintian old-fsf-address-in-copyright-file
+
+  [ Julien Cristau ]
+  * Undo ia64 xserver-xorg-video-all dependency change from 1:7.6+13
+    (closes: #700447).
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 23 Feb 2013 12:39:32 +0100
 
 xorg (1:7.7+1ubuntu7) trusty; urgency=medium
 
@@ -123,12 +181,6 @@ xorg (1:7.6+13) unstable; urgency=high
 
  -- Cyril Brulebois <kibi@debian.org>  Fri, 11 May 2012 12:24:22 +0200
 
-xorg (1:7.6+12ubuntu1) precise; urgency=low
-
-  * Merge from Debian unstable.
-
- -- Timo Aaltonen <tjaalton@ubuntu.com>  Thu, 22 Mar 2012 19:42:07 +0200
-
 xorg (1:7.6+12) unstable; urgency=high
 
   * Fix unsafe manipulation of /tmp/.X11-unix and /tmp/.ICE-unix in the
@@ -150,38 +202,6 @@ xorg (1:7.6+11) unstable; urgency=low
     use for other display managers. Closes: #586685.
 
  -- Josselin Mouette <joss@debian.org>  Sat, 28 Jan 2012 12:42:38 +0100
-
-xorg (1:7.6+10ubuntu1) precise; urgency=low
-
-  * Merge from Debian unstable, remaining changes:
-    - Add apport hook
-    - Demote xfonts-{75DPI,100DPI} to Suggests. Demote xfonts-scalable to
-      Recommends.
-    - debian/local/Xsession:
-      Truncate xsession-errors on startup if too big
-    - debian/local/Xsession.d/20x11-common_process-args:
-      Add support for session command containing args.
-    - debian/local/Xsession.d/60x11-common_localhost:
-      Authorise all processes running with the user's credentials to connect
-      to the server.
-    - debian/local/Xsession.d/60x11-common_xdg_path:
-      Add session script to set xdg path depending on the selected session.
-    - debian/rules, debian/control:
-      Add dependencies on x11-common, since pkgbinarymangler moves the docs
-      there to save some space on the image.
-    - debian/scripts/vars.*:
-      + Don't drop wacom from input-all.
-      + Add -vmmouse to input-all for amd64 and i386.
-      + Add -qxl to video-all for amd64 and i386.
-      + Add -geode to video-all for i386.
-      + Drop video drivers that are likely irrelevant for ARM.
-      + Drop apm, ark, chips, i128, i740, rendition, s3virge, tseng, voodoo
-        from xserver-xorg-video-all dependencies. They are unmaintained and
-        obsolete.
-    - debian/x11-common.{preinst,postinst,postrm}.in:
-      Clean up the old failsafe-x files.
-
- -- Timo Aaltonen <tjaalton@ubuntu.com>  Mon, 23 Jan 2012 07:38:32 +0200
 
 xorg (1:7.6+10) unstable; urgency=high
 
@@ -224,100 +244,6 @@ xorg (1:7.6+8) unstable; urgency=high
   * Run debian-updatepo, and specify language fields.
 
  -- Cyril Brulebois <kibi@debian.org>  Sun, 14 Aug 2011 23:11:05 +0200
-
-xorg (1:7.6+7ubuntu7) oneiric; urgency=low
-
-  * Add '/etc/init/failsafe-x.conf' to the list of old failsafe-x config
-    files to purge.
-
- -- Timo Aaltonen <tjaalton@ubuntu.com>  Fri, 09 Sep 2011 15:33:19 +0300
-
-xorg (1:7.6+7ubuntu6) oneiric; urgency=low
-
-  * debian/control: Remove Recommends on xdiagnose as well; apparently it
-    still causes gtk3 to be included for kubuntu.  Derivative distros will
-    need to opt-in with their seeds if they wish to have X diagnostics
-    included, or users will have to manually install xdiagnose themselves.
-
- -- Bryce Harrington <bryce@ubuntu.com>  Fri, 22 Jul 2011 13:30:15 -0700
-
-xorg (1:7.6+7ubuntu5) oneiric; urgency=low
-
-  * debian/control: Move xdiagnose dependency to ubuntu-desktop.
-    xdiagnose has a gtk dependency, which would pull in gtk3 to kubuntu.
-    (LP: #814346)
-
- -- Bryce Harrington <bryce@ubuntu.com>  Thu, 21 Jul 2011 17:47:16 -0700
-
-xorg (1:7.6+7ubuntu4) oneiric; urgency=low
-
-  * debian/control:  Add Depends on xdiagnose, to ensure it always gets
-    installed.
-
- -- Bryce Harrington <bryce@ubuntu.com>  Tue, 19 Jul 2011 18:19:24 -0700
-
-xorg (1:7.6+7ubuntu3) oneiric; urgency=low
-
-  * debian/rules:
-    - Reverse the symlinking of /usr/share/doc directories to x11-common.
-      This should now be handled automatically by pkgbinarymangler, and the
-      directory symlink now causes file conflicts.  (LP: #812665)
-
- -- Christopher James Halse Rogers <raof@ubuntu.com>  Tue, 19 Jul 2011 17:32:01 +1000
-
-xorg (1:7.6+7ubuntu2) oneiric; urgency=low
-
-  * debian/local/Xsession.d/60x11-common_xdg_path: Add session script to
-    set xdg path depending on the selected session (compatible with
-    lightdm, gdm and kdm now) (LP: #804734)
-
- -- Didier Roche <didrocks@ubuntu.com>  Wed, 06 Jul 2011 09:39:17 +0200
-
-xorg (1:7.6+7ubuntu1) oneiric; urgency=low
-
-  * Merge from Debian unstable, remaining changes:
-    - Add apport hook
-    - Demote xfonts-{75DPI,100DPI} to Suggests. Demote xfonts-scalable to
-      Recommends.
-    - debian/local/Xsession:
-      Truncate xsession-errors on startup if too big
-    - debian/local/Xsession.d/20x11-common_process-args:
-      Add support for session command containing args.
-    - debian/local/Xsession.d/60x11-common_localhost:
-      Authorise all processes running with the user's credentials to connect
-      to the server.
-    - debian/rules, debian/control:
-      Add dependencies on x11-common, and symlink /usr/share/doc directories
-      of all packages to x11-common's.
-    - debian/scripts/vars.*:
-      + Don't drop wacom from input-all.
-      + Add -vmmouse to input-all for amd64 and i386.
-      + Add -qxl to video-all for amd64 and i386.
-      + Add -geode to video-all for i386.
-      + Drop video drivers that are likely irrelevant for ARM.
-    - debian/xserver-xorg.postinst.in: Also migrate users from psb → vesa.
-
-  [ Bryce Harrington ]
-  * apport/source_xorg.py:
-    - Move Failsafe-X out of the xorg package to xdiagnose
-      (LP: #480744)
-    - Simplify answers for bug reporters filing post-release reports.
-      (LP: #778758)
-    - Remove attach_drm_info().  This is useful info but we use it very
-      infrequently, and it is already available in other log files.  But the
-      call makes bug reports a bit cluttered since it adds a lot of lines to
-      the report itself.
-
-  [ Timo Aaltonen ]
-  * rules: A stampfile generation was commented out by mistake, uncomment
-    it.
-  * Rework the x11-common.{postinst,postrm,preinst} failsafe conffile
-    handling, the previous ones added in 1:7.6+4ubuntu1 were wrong too.
-  * scripts/vars.{amd64,i386,powerpc}: Remove apm, ark, chips, i128, i740,
-    rendition, s3virge, tseng, voodoo from xserver-xorg-video-all
-    dependencies. They are unmaintained and obsolete.
-
- -- Timo Aaltonen <tjaalton@ubuntu.com>  Tue, 14 Jun 2011 15:39:40 +0300
 
 xorg (1:7.6+7) unstable; urgency=low
 
