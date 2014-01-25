@@ -88,7 +88,6 @@ Depends:
  x11-apps,
  x11-session-utils,
  x11-utils,
- x11-xfs-utils,
  x11-xkb-utils,
  x11-xserver-utils,
  xauth,
@@ -99,7 +98,9 @@ Depends:
  xterm | x-terminal-emulator,
  ${misc:Depends},
 Provides: x-window-system, x-window-system-core
-Suggests: xorg-docs
+Suggests:
+ xorg-docs,
+ x11-xfs-utils,
 Description: X.Org X Window System
  This metapackage provides the components for a standalone
  workstation running the X Window System.  It provides the X libraries, an X
@@ -190,12 +191,13 @@ Depends:
  x11-apps,
  x11-session-utils,
  x11-utils,
- x11-xfs-utils,
  x11-xkb-utils,
  x11-xserver-utils,
  xauth,
  xinit,
  ${misc:Depends},
+Suggests:
+ x11-xfs-utils,
 Description: miscellaneous X clients - metapackage
  An X client is a program that interfaces with an X server (almost always via
  the X libraries), and thus with some input and output hardware like a
@@ -212,12 +214,13 @@ Package: xutils
 Section: x11
 Architecture: all
 Depends:
- x11-xfs-utils,
  x11-utils,
  x11-xserver-utils,
  x11-session-utils,
  xfonts-utils,
  ${misc:Depends},
+Suggests:
+ x11-xfs-utils,
 Description: X Window System utility programs metapackage
  xutils provides a set of utility programs shipped with the X Window System.
  Many of these programs are useful even on a system that does not have any X
