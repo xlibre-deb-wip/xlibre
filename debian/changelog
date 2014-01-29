@@ -1,4 +1,4 @@
-xorg (1:7.7+1ubuntu8) UNRELEASED; urgency=low
+xorg (1:7.7+1ubuntu8) trusty; urgency=low
 
   [ Bryce Harrington ]
   * scripts/vars.arm*: Don't include -ati or -nouveau, to save
@@ -9,7 +9,7 @@ xorg (1:7.7+1ubuntu8) UNRELEASED; urgency=low
   * Drop libgl1-mesa-glx, -dri, and libglu from armhf; these are highly likely
     to be useless on an armhf system.
 
- -- Christopher James Halse Rogers <raof@ubuntu.com>  Mon, 18 Feb 2013 16:17:23 +0000
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Wed, 29 Jan 2014 16:07:39 +0100
 
 xorg (1:7.7+1ubuntu7) trusty; urgency=medium
 
