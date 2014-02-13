@@ -1,11 +1,11 @@
-xorg (1:7.7+6) UNRELEASED; urgency=medium
+xorg (1:7.7+6) unstable; urgency=medium
 
   * Move x11-xfs-utils from Depends to Suggests (closes: #736556).
   * Remove openchrome driver from hurd-i386's xserver-xorg-video-all (closes:
     #706889).
   * Move xserver-xorg-video-qxl from Depends to Recommends [amd64, i386].
 
- -- Julien Cristau <jcristau@debian.org>  Sat, 25 Jan 2014 11:11:57 +0100
+ -- Julien Cristau <jcristau@debian.org>  Thu, 13 Feb 2014 08:30:32 +0100
 
 xorg (1:7.7+5) unstable; urgency=medium
 
