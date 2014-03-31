@@ -1,3 +1,9 @@
+xorg (1:7.7+7) UNRELEASED; urgency=medium
+
+  * Add minimal ppc64el support (closes: #742731).  Thanks, Breno Leitao!
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 31 Mar 2014 22:53:43 +0200
+
 xorg (1:7.7+6) unstable; urgency=medium
 
   * Move x11-xfs-utils from Depends to Suggests (closes: #736556).
