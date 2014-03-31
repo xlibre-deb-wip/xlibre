@@ -71,13 +71,6 @@ if dpkg --compare-versions "$2" lt-nl 1:7.6~3; then
   rmdir "$CONFIG_AUX_DIR" 2>/dev/null || :
 fi
 
-if dpkg --compare-versions "$2" lt-nl 1:7.4+2; then
-  db_unregister x11-common/xwrapper/nice_value || :
-  db_unregister x11-common/xwrapper/nice_value/error || :
-  db_unregister x11-common/upgrade_issues || :
-  db_unregister x11-common/x11r6_bin_not_empty || :
-fi
-
 #DEBHELPER#
 
 exit 0
