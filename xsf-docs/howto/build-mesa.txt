@@ -27,15 +27,6 @@ in which case the appropriate options to be passed to `./configure`
 should be looked up in the `debian/rules` file of the Debian source
 package.
 
-****
-.Note
-Before reading further, be aware that `nouveau` is a bit special:
-
- * It’s considered experimental, and shipped in the
-   `libgl1-mesa-dri-experimental` package accordingly.
- * It may fail to build (both API and ABI are still changing).
-****
-
 
 <<<
 Gathering information
@@ -121,8 +112,7 @@ Now, what are the parameters to replace “++…++” with? Basically, if
 you determined an Intel driver (`i915` or `i965`), you want to use the
 classic drivers and to disable the Gallium drivers. If you saw a
 Radeon driver (`r300` or `r600`), you should prefer the Gallium
-drivers. If you’re using `nouveau`, make sure you read the note in the
-_Foreword_. The following assumes you’re using `nouveau_dri.so`.
+drivers.
 
 
 Examples for common drivers:
