@@ -190,9 +190,7 @@ _Did this work?_
 +
 _Did this work?_
 +
-*FIXME: We should be shipping EGL-aware applications through `mesa-utils`.*
-+
-        $ EGL_LOG_LEVEL=debug test_application 2>&1 >/dev/null | grep '\.so'
+        $ EGL_LOG_LEVEL=debug es2_info 2>&1 >/dev/null | grep '\.so'
         libEGL debug: added lib/egl/egl_gallium.so to module array
         libEGL debug: dlopen(lib/egl/egl_gallium.so)
         libEGL debug: DRI2: dlopen(lib/i915_dri.so)
