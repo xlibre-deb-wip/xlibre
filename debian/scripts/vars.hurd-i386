@@ -8,7 +8,6 @@ XSERVER_XORG_VIDEO_DEPENDS="\
 	xserver-xorg-video-fbdev, \
 	xserver-xorg-video-mga, \
 	xserver-xorg-video-neomagic, \
-	xserver-xorg-video-openchrome, \
 	xserver-xorg-video-savage, \
 	xserver-xorg-video-siliconmotion, \
 	xserver-xorg-video-tdfx, \

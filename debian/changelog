@@ -1,8 +1,31 @@
-xorg (1:7.7+5ubuntu1) UNRELEASED; urgency=medium
+xorg (1:7.7+7ubuntu1) UNRELEASED; urgency=medium
 
   * Merge from debian.
 
  -- Timo Aaltonen <tjaalton@ubuntu.com>  Fri, 31 Jan 2014 15:32:24 +0200
+
+xorg (1:7.7+7) unstable; urgency=medium
+
+  * Add minimal ppc64el support (closes: #742731).  Thanks, Breno Leitao!
+  * Remove support for upgrades from pre-squeeze versions from maintainer
+    scripts.
+  * Drop hal dependency from xserver-xorg on kfreebsd now that we use devd
+    (closes: #710197)
+  * Add powerpcspe support by copying powerpc driver lists (closes: #583288)
+  * Add x32 support by symlinking the amd64 driver lists (closes: #700010)
+  * Bump xserver-xorg-core dependency to a version that uses devd instead of
+    hal.
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 01 Apr 2014 11:22:41 +0200
+
+xorg (1:7.7+6) unstable; urgency=medium
+
+  * Move x11-xfs-utils from Depends to Suggests (closes: #736556).
+  * Remove openchrome driver from hurd-i386's xserver-xorg-video-all (closes:
+    #706889).
+  * Move xserver-xorg-video-qxl from Depends to Recommends [amd64, i386].
+
+ -- Julien Cristau <jcristau@debian.org>  Thu, 13 Feb 2014 08:30:32 +0100
 
 xorg (1:7.7+5) unstable; urgency=medium
 

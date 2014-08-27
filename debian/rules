@@ -111,12 +111,6 @@ binary-arch: build install
 	dh_testdir
 	dh_testroot
 	dh_install
-ifeq ($(DEB_HOST_ARCH_OS), kfreebsd)
-	install -d debian/xserver-xorg/usr/lib/hal
-	install -d debian/xserver-xorg/usr/share/hal/fdi/policy/10osvendor
-	install -m 755 debian/local/debian-setup-keyboard debian/xserver-xorg/usr/lib/hal
-	install -m 644 debian/local/debian-x11-keymap.fdi debian/xserver-xorg/usr/share/hal/fdi/policy/10osvendor
-endif
 	dh_installdebconf
 	dh_installdirs
 	dh_installdocs

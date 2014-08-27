@@ -13,7 +13,6 @@ XSERVER_XORG_VIDEO_DEPENDS=" \
 	xserver-xorg-video-neomagic, \
 	xserver-xorg-video-nouveau, \
 	xserver-xorg-video-openchrome, \
-	xserver-xorg-video-qxl, \
 	xserver-xorg-video-savage, \
 	xserver-xorg-video-siliconmotion, \
 	xserver-xorg-video-sisusb, \
@@ -24,7 +23,10 @@ XSERVER_XORG_VIDEO_DEPENDS=" \
 "
 
 
-XSERVER_XORG_VIDEO_RECOMMENDS="xserver-xorg-video-geode"
+XSERVER_XORG_VIDEO_RECOMMENDS=" \
+	xserver-xorg-video-geode, \
+	xserver-xorg-video-qxl, \
+"
 
 
 XSERVER_XORG_INPUT_DEPENDS="xserver-xorg-input-evdev, \
