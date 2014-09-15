@@ -1,3 +1,10 @@
+xorg (1:7.7+7ubuntu2) utopic; urgency=medium
+
+  * Lower geode to suggests. (LP: #1368158)
+  * Explicitly add inkscape to build-depends.
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Mon, 15 Sep 2014 09:36:48 +0200
+
 xorg (1:7.7+7ubuntu1) utopic; urgency=medium
 
   [ Timo Aaltonen ]

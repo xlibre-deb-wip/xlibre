@@ -11,6 +11,7 @@ Build-Depends:
  po-debconf,
 # xsf-docs:
  asciidoc,
+ inkscape,
 Vcs-Git: git://git.debian.org/git/pkg-xorg/debian/xorg
 Vcs-Browser: http://git.debian.org/?p=pkg-xorg/debian/xorg.git
 
@@ -55,6 +56,8 @@ Depends:
  ${misc:Depends},
 Recommends:
  ${F:XServer-Xorg-Video-Recommends},
+Suggests:
+ ${F:XServer-Xorg-Video-Suggests},
 Replaces: xserver-xorg-driver-all
 Conflicts: xserver-xorg-driver-all
 Description: X.Org X server -- output driver metapackage

@@ -24,8 +24,12 @@ XSERVER_XORG_VIDEO_DEPENDS=" \
 
 
 XSERVER_XORG_VIDEO_RECOMMENDS=" \
-	xserver-xorg-video-geode, \
 	xserver-xorg-video-qxl, \
+"
+
+
+XSERVER_XORG_VIDEO_SUGGESTS=" \
+	xserver-xorg-video-geode, \
 "
 
 
