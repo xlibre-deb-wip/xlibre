@@ -1,3 +1,9 @@
+xorg (1:7.7+8) UNRELEASED; urgency=medium
+
+  * debian/x11-common.init: Add Short-Description field (Closes: #510087)
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 24 Sep 2014 10:52:41 +0200
+
 xorg (1:7.7+7) unstable; urgency=medium
 
   * Add minimal ppc64el support (closes: #742731).  Thanks, Breno Leitao!
