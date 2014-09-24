@@ -3,8 +3,9 @@ xorg (1:7.7+8) UNRELEASED; urgency=medium
   * debian/x11-common.init: Add Short-Description field (Closes: #510087)
   * debian/x11-common.init: Call restorecon after creating the socket
     directories to ensure the SELinux context if properly set (Closes: #677831)
+  * debian/control: Bump Standards-Version to 3.9.5 (no further changes)
 
- -- Laurent Bigonville <bigon@debian.org>  Wed, 24 Sep 2014 12:18:09 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 24 Sep 2014 12:55:09 +0200
 
 xorg (1:7.7+7) unstable; urgency=medium
 
