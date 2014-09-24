@@ -62,7 +62,6 @@ set_up_dir () {
       "0 0 "*" directory")
         # as it is owned by root, cannot be replaced with a symlink:
         chmod 01777 "$DIR"
-        do_restorecon "$DIR"
         break
         ;;
       *" directory")
@@ -76,6 +75,7 @@ set_up_dir () {
         ;;
     esac
   done
+  do_restorecon "$DIR"
 
   return 0
 }
