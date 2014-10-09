@@ -34,9 +34,9 @@ Package: xserver-xorg
 Architecture: any
 Depends:
  xserver-xorg-core (>= 2:1.11) | xserver-xorg-core-omap-revert [armhf],
- xserver-xorg-video-all  | xserver-xorg-video-omap-revert [armhf] | xorg-driver-video,
- xserver-xorg-input-all | xorg-driver-input,
- xserver-xorg-input-evdev [linux-any],
+ xserver-xorg-video-all (>= 0~) | xorg-driver-video,
+ xserver-xorg-input-all (>= 0~) | xorg-driver-input,
+ xserver-xorg-input-evdev (>= 0~) [linux-any],
  hal (>= 0.5.14-4~) [kfreebsd-any],
  ${shlibs:Depends},
  ${misc:Depends},
@@ -44,7 +44,15 @@ Depends:
  x11-xkb-utils
 Recommends:
  libgl1-mesa-dri,
-Provides: xserver
+Provides:
+ xserver-xorg-renamed,
+ xserver,
+Replaces:
+ xserver-xorg-renamed,
+ xorg-renamed-package,
+Conflicts:
+ xserver-xorg-renamed,
+ xorg-renamed-package,
 Description: X.Org X server
  This package depends on the full suite of the server and drivers for the
  X.Org X server.  It does not provide the actual server itself.
@@ -78,7 +86,7 @@ Description: X.Org X server -- input driver metapackage
 Package: xorg
 Architecture: any
 Depends:
- xserver-xorg (>= ${binary:Version}),
+ xserver-xorg (>= ${binary:Version}) | xserver-xorg-renamed,
  libgl1-mesa-glx | libgl1 [!armhf],
  libgl1-mesa-dri [!armhf],
  libglu1-mesa [!armhf],

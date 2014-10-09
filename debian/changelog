@@ -1,3 +1,9 @@
+xorg (1:7.7+1ubuntu8.1) UNRELEASED; urgency=medium
+
+  * Fixup the xorg packages to work correctly with the renamed utopic stack.
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Thu, 09 Oct 2014 11:46:23 +0200
+
 xorg (1:7.7+1ubuntu8) trusty; urgency=low
 
   [ Bryce Harrington ]
