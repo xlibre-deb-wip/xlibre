@@ -9,7 +9,6 @@ XSERVER_XORG_VIDEO_DEPENDS=" \
 	xserver-xorg-video-fbdev, \
 	xserver-xorg-video-intel, \
 	xserver-xorg-video-mga, \
-	xserver-xorg-video-modesetting, \
 	xserver-xorg-video-neomagic, \
 	xserver-xorg-video-nouveau, \
 	xserver-xorg-video-openchrome, \

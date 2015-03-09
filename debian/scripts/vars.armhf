@@ -5,8 +5,6 @@
 # debian/scripts (Bourne shell).
 XSERVER_XORG_VIDEO_DEPENDS="\
 	xserver-xorg-video-fbdev, \
-	xserver-xorg-video-modesetting, \
-	xserver-xorg-video-vesa, \
 "
 
 XSERVER_XORG_INPUT_DEPENDS="xserver-xorg-input-evdev, \

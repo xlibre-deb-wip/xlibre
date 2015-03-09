@@ -35,7 +35,7 @@ Package: xserver-xorg
 Architecture: any
 Depends:
  xserver-xorg-core (>= 2:1.15.0.901),
- xserver-xorg-video-all | xorg-driver-video,
+ xserver-xorg-video-all | xserver-xorg-core (>= 2:1.17) | xorg-driver-video,
  xserver-xorg-input-all | xorg-driver-input,
  xserver-xorg-input-evdev [linux-any],
  ${shlibs:Depends},

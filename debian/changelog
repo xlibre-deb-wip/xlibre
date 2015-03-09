@@ -1,3 +1,10 @@
+xorg (1:7.7+7ubuntu3) UNRELEASED; urgency=medium
+
+  * Modesetting has been removed, remove from vars.
+  * Do not require vesa on armhf, only fbdev is useful.
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Mon, 09 Mar 2015 11:46:22 +0100
+
 xorg (1:7.7+8) UNRELEASED; urgency=medium
 
   [ Laurent Bigonville ]
