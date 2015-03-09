@@ -255,32 +255,36 @@ main(int argc, char **argv)
                    X_WRAPPER_CONFIG_FILE); */
   }
 
-  if (lstat(X_SERVER_SYMLINK, &statbuf)) {
+  i = lstat(X_SERVER_SYMLINK, &statbuf);
+  if (i < 0 && errno != ENOENT) {
     (void) fprintf(stderr, "X: cannot stat %s (%s), aborting.\n",
                    X_SERVER_SYMLINK, strerror(errno));
     exit(1);
   }
 
-  i = readlink(X_SERVER_SYMLINK, xserver, 1024);
-
   if (i < 0) {
-    (void) fprintf(stderr, "X: cannot read %s symbolic link (%s), aborting.\n",
-                   X_SERVER_SYMLINK, strerror(errno));
-    exit(1);
+    strcpy(xserver, "/usr/bin/Xorg");
+  } else {
+    i = readlink(X_SERVER_SYMLINK, xserver, 1024);
+
+    if (i < 0) {
+      (void) fprintf(stderr, "X: cannot read %s symbolic link (%s), aborting.\n",
+                     X_SERVER_SYMLINK, strerror(errno));
+      exit(1);
+    }
+    xserver[i] = '\0'; /* readlink() does not null-terminate the string */
+
+    if ((strcmp(xserver, "/usr/bin/X11/X") == 0) ||
+        (strcmp(xserver, "/usr/X11R6/bin/X") == 0) ||
+        (strcmp(xserver, "/usr/bin/X") == 0)) {
+      (void) fprintf(stderr, "X: %s points back to X wrapper executable, "
+                     "aborting.\n", X_SERVER_SYMLINK);
+      exit(1);
+    }
   }
 
-  xserver[i] = '\0'; /* readlink() does not null-terminate the string */
-
-  if ((strcmp(xserver, "/usr/bin/X11/X") == 0) ||
-      (strcmp(xserver, "/usr/X11R6/bin/X") == 0) ||
-      (strcmp(xserver, "/usr/bin/X") == 0)) {
-    (void) fprintf(stderr, "X: %s points back to X wrapper executable, "
-                   "aborting.\n", X_SERVER_SYMLINK);
-    exit(1);
-  }
-
-  if (access(X_SERVER_SYMLINK, X_OK)) { /* access() uses real uid */
-    (void) fprintf(stderr, "%s is not executable\n", X_SERVER_SYMLINK);
+  if (access(xserver, X_OK)) { /* access() uses real uid */
+    (void) fprintf(stderr, "%s is not executable\n", val);
     exit(1);
   }
 
@@ -332,7 +336,7 @@ main(int argc, char **argv)
      * change to the directory where the X server symlink is so that a relative
      * symlink will work and execute the X server
      */
-    if (chdir(X_SERVER_SYMLINK_DIR)) {
+    if (xserver[0] != '/' && chdir(X_SERVER_SYMLINK_DIR)) {
       (void) fprintf(stderr, "X: cannot chdir() to %s (%s), aborting.\n",
                      X_SERVER_SYMLINK_DIR, strerror(errno));
       exit(1);
