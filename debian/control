@@ -10,7 +10,7 @@ Build-Depends:
  po-debconf,
 # xsf-docs:
  asciidoc,
-Vcs-Git: git://anonscm.debian.org/pkg-xorg/debian/xorg
+Vcs-Git: git://anonscm.debian.org/git/pkg-xorg/debian/xorg
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-xorg/debian/xorg.git
 
 Package: x11-common
