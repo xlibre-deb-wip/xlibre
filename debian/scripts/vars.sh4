@@ -11,7 +11,6 @@ XSERVER_XORG_VIDEO_DEPENDS="\
 	xserver-xorg-video-mga, \
 	xserver-xorg-video-neomagic, \
 	xserver-xorg-video-savage, \
-	xserver-xorg-video-siliconmotion, \
 	xserver-xorg-video-sisusb, \
 	xserver-xorg-video-tdfx, \
 	xserver-xorg-video-trident, \

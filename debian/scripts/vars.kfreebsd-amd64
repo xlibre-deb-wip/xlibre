@@ -10,7 +10,6 @@ XSERVER_XORG_VIDEO_DEPENDS="\
 	xserver-xorg-video-neomagic, \
 	xserver-xorg-video-openchrome, \
 	xserver-xorg-video-savage, \
-	xserver-xorg-video-siliconmotion, \
 	xserver-xorg-video-tdfx, \
 	xserver-xorg-video-trident, \
 	xserver-xorg-video-vesa, \
