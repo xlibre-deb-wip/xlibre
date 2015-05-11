@@ -1,6 +1,7 @@
 xorg (1:7.7+9) UNRELEASED; urgency=medium
 
   * Remove the siliconmotion driver from xserver-xorg-video-all.
+  * Remove Cyril and Drew from Uploaders.
 
  -- Julien Cristau <jcristau@debian.org>  Mon, 11 May 2015 14:27:50 +0200
 
