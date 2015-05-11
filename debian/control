@@ -5,7 +5,7 @@ Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Standards-Version: 3.9.5
 Build-Depends:
  dpkg (>= 1.16.1),
- debhelper (>= 7),
+ debhelper (>= 9),
  po-debconf,
 # xsf-docs:
  asciidoc,
