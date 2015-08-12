@@ -31,7 +31,8 @@ Description: X Window System (X.Org) infrastructure
 Package: xserver-xorg
 Architecture: any
 Depends:
- xserver-xorg-core (>= 2:1.15.0.901),
+ xserver-xorg-core (>= 2:1.17.2-2),
+ xserver-xorg-legacy [!linux-any],
  xserver-xorg-video-all | xorg-driver-video,
  xserver-xorg-input-all | xorg-driver-input,
  xserver-xorg-input-evdev [linux-any],
