@@ -18,10 +18,10 @@ override_dh_install:
 	$(MAKE) -C xsf-docs install DESTDIR=$(CURDIR)/debian/xserver-xorg/usr/share/doc/xorg
 	dh_install
 
-override_dh_installinit:
+override_dh_installinit-indep:
 	dh_installinit -px11-common -u'start 70 S .'
 
-override_dh_fixperms:
+override_dh_fixperms-indep:
 	dh_fixperms
 	chown root:root debian/x11-common/etc/X11/Xreset
 	chmod 755 debian/x11-common/etc/X11/Xreset
