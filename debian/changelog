@@ -1,8 +1,8 @@
-xorg (1:7.7+11) UNRELEASED; urgency=medium
+xorg (1:7.7+11) experimental; urgency=medium
 
   * Fix arch-specific build broken in 1:7.7+10.
 
- -- Julien Cristau <jcristau@debian.org>  Fri, 21 Aug 2015 16:22:24 +0200
+ -- Julien Cristau <jcristau@debian.org>  Fri, 21 Aug 2015 16:39:20 +0200
 
 xorg (1:7.7+10) experimental; urgency=medium
 
