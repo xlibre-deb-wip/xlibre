@@ -8,6 +8,7 @@ xorg (1:7.7+12) UNRELEASED; urgency=medium
   * Drop vars files for unsupported architectures: arm, armeb, ia64,
     m32r, s390 and sparc.
   * Add upstream url.
+  * Use https for Vcs-* fields.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 31 Aug 2015 18:37:12 +0200
 
