@@ -15,6 +15,7 @@ xorg (1:7.7+12) UNRELEASED; urgency=medium
   * Inline all vars files into control.
   * Remove redundant xserver-xorg-input-evdev from xserver-xorg (Already
     in -input-all).
+  * Add xserver-xorg-video-intel on kfreebsd-any.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 31 Aug 2015 18:37:12 +0200
 
