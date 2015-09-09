@@ -1,3 +1,0 @@
-XSERVER_XORG_VIDEO_DEPENDS="\
-	xserver-xorg-video-fbdev, \
-"

@@ -2,9 +2,6 @@
 
 ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
 
-# Read in architecture-specific variables of importance.
-include debian/scripts/vars.$(ARCH)
-
 %:
 	dh $@ --parallel
 
@@ -27,8 +24,5 @@ override_dh_fixperms-indep:
 	chmod 755 debian/x11-common/etc/X11/Xreset
 	chown root:root debian/x11-common/etc/X11/Xsession
 	chmod 755 debian/x11-common/etc/X11/Xsession
-
-override_dh_gencontrol:
-	dh_gencontrol -- -VF:XServer-Xorg-Video-Depends=$(XSERVER_XORG_VIDEO_DEPENDS)
 
 # vim:set noet ai sts=8 sw=8 tw=0:
