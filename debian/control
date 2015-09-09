@@ -54,7 +54,7 @@ Depends:
  ${F:XServer-Xorg-Video-Depends},
  ${misc:Depends},
 Recommends:
- ${F:XServer-Xorg-Video-Recommends},
+ xserver-xorg-video-qxl [amd64 i386 x32],
 Replaces: xserver-xorg-driver-all
 Conflicts: xserver-xorg-driver-all
 Description: X.Org X server -- output driver metapackage
