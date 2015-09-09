@@ -5,18 +5,9 @@
 # debian/scripts (Bourne shell).
 XSERVER_XORG_VIDEO_DEPENDS=" \
 	xserver-xorg-video-ati, \
-	xserver-xorg-video-cirrus, \
 	xserver-xorg-video-fbdev, \
 	xserver-xorg-video-intel, \
-	xserver-xorg-video-mga, \
-	xserver-xorg-video-modesetting, \
-	xserver-xorg-video-neomagic, \
 	xserver-xorg-video-nouveau, \
-	xserver-xorg-video-openchrome, \
-	xserver-xorg-video-savage, \
-	xserver-xorg-video-sisusb, \
-	xserver-xorg-video-tdfx, \
-	xserver-xorg-video-trident, \
 	xserver-xorg-video-vesa, \
 	xserver-xorg-video-vmware, \
 "
