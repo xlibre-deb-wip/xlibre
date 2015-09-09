@@ -36,7 +36,6 @@ Depends:
  xserver-xorg-legacy [!linux-any],
  xserver-xorg-video-all | xorg-driver-video,
  xserver-xorg-input-all | xorg-driver-input,
- xserver-xorg-input-evdev [linux-any],
  ${shlibs:Depends},
  ${misc:Depends},
  xkb-data (>= 1.4),
