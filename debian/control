@@ -68,7 +68,7 @@ Depends:
  ${F:XServer-Xorg-Input-Depends},
  ${misc:Depends},
 Recommends:
- ${F:XServer-Xorg-Input-Recommends},
+ xserver-xorg-input-wacom [alpha amd64 armel armhf hppa i386 mips mips64el mips powerpc powerpcspe sh4 sparc64 x32],
 Description: X.Org X server -- input driver metapackage
  This package depends on the full suite of input drivers for the X.Org X server
  (Xorg).  It does not provide any drivers itself, and may be removed if you wish

@@ -22,6 +22,3 @@ XSERVER_XORG_INPUT_DEPENDS="xserver-xorg-input-evdev, \
 	xserver-xorg-input-vmmouse, \
 	xserver-xorg-input-synaptics, \
 "
-
-
-XSERVER_XORG_INPUT_RECOMMENDS="xserver-xorg-input-wacom"
