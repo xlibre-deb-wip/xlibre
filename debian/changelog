@@ -17,6 +17,7 @@ xorg (1:7.7+12) UNRELEASED; urgency=medium
     in -input-all).
   * Add xserver-xorg-video-intel on kfreebsd-any.
   * Add xserver-xorg-video-freedreno on armel and armhf.
+  * Add xserver-xorg-video-nouveau on arm64.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 31 Aug 2015 18:37:12 +0200
 
