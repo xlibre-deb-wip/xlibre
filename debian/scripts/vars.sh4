@@ -18,8 +18,6 @@ XSERVER_XORG_VIDEO_DEPENDS="\
 	xserver-xorg-video-vga, \
 "
 
-# xserver-xorg-video-glide,
-
 XSERVER_XORG_INPUT_DEPENDS="xserver-xorg-input-evdev, \
 	xserver-xorg-input-synaptics"
 
