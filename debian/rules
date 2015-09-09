@@ -29,7 +29,6 @@ override_dh_fixperms-indep:
 	chmod 755 debian/x11-common/etc/X11/Xsession
 
 override_dh_gencontrol:
-	dh_gencontrol -- -VF:XServer-Xorg-Video-Depends=$(XSERVER_XORG_VIDEO_DEPENDS) \
-	                 -VF:XServer-Xorg-Input-Depends=$(XSERVER_XORG_INPUT_DEPENDS)
+	dh_gencontrol -- -VF:XServer-Xorg-Video-Depends=$(XSERVER_XORG_VIDEO_DEPENDS)
 
 # vim:set noet ai sts=8 sw=8 tw=0:

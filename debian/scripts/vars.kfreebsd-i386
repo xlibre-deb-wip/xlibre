@@ -7,6 +7,3 @@ XSERVER_XORG_VIDEO_DEPENDS="\
 	xserver-xorg-video-ati, \
 	xserver-xorg-video-vesa, \
 "
-
-XSERVER_XORG_INPUT_DEPENDS="xserver-xorg-input-kbd, \
-	xserver-xorg-input-mouse"

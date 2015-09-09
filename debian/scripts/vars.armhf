@@ -8,7 +8,3 @@ XSERVER_XORG_VIDEO_DEPENDS="xserver-xorg-video-ati, \
 	xserver-xorg-video-nouveau, \
 	xserver-xorg-video-vesa, \
 "
-
-XSERVER_XORG_INPUT_DEPENDS="xserver-xorg-input-evdev, \
-	xserver-xorg-input-synaptics, \
-"

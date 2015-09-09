@@ -8,6 +8,3 @@ XSERVER_XORG_VIDEO_DEPENDS="\
 	xserver-xorg-video-vesa, \
 	xserver-xorg-video-vmware, \
 "
-
-XSERVER_XORG_INPUT_DEPENDS="xserver-xorg-input-kbd, \
-	xserver-xorg-input-mouse"

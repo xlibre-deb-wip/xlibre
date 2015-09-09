@@ -65,7 +65,12 @@ Description: X.Org X server -- output driver metapackage
 Package: xserver-xorg-input-all
 Architecture: any
 Depends:
- ${F:XServer-Xorg-Input-Depends},
+ xserver-xorg-input-evdev [linux-any],
+ xserver-xorg-input-kbd [!linux-any],
+ xserver-xorg-input-mouse [!linux-any],
+ xserver-xorg-input-synaptics [alpha amd64 arm64 armel armhf hppa i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el sh4 sparc64 x32],
+ xserver-xorg-input-vmmouse [amd64 i386 x32],
+ xserver-xorg-input-void [s390x],
  ${misc:Depends},
 Recommends:
  xserver-xorg-input-wacom [alpha amd64 armel armhf hppa i386 mips mips64el mips powerpc powerpcspe sh4 sparc64 x32],
