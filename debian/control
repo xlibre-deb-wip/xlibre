@@ -73,7 +73,7 @@ Depends:
  xserver-xorg-input-evdev [linux-any],
  xserver-xorg-input-kbd [!linux-any],
  xserver-xorg-input-mouse [!linux-any],
- xserver-xorg-input-synaptics [alpha amd64 arm64 armel armhf hppa i386 m68k mips mips64el mipsel powerpc powerpcspe ppc64 ppc64el sh4 sparc64 x32],
+ xserver-xorg-input-synaptics [!s390x],
  xserver-xorg-input-vmmouse [amd64 i386 x32],
  xserver-xorg-input-void [s390x],
  ${misc:Depends},
