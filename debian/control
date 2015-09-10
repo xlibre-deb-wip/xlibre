@@ -53,6 +53,7 @@ Depends:
  xserver-xorg-video-ati [!hurd-any !s390x],
  xserver-xorg-video-fbdev [!s390x],
  xserver-xorg-video-freedreno [armel armhf],
+ xserver-xorg-video-dummy [s390x],
  xserver-xorg-video-intel [amd64 i386 kfreebsd-any x32],
  xserver-xorg-video-nouveau [amd64 arm64 armhf i386 powerpc x32],
  xserver-xorg-video-vesa [!s390x],
