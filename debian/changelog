@@ -9,15 +9,17 @@ xorg (1:7.7+12) UNRELEASED; urgency=medium
     m32r, s390 and sparc.
   * Add upstream url.
   * Use https for Vcs-* fields.
-  * Add support for mips64el by symlinking to vars.mips (Closes:
-    #755482).
-  * Remove all non-KMS drivers from xserver-xorg-video-all.
+  * Remove all non-KMS (except fbdev and vesa) drivers from
+    xserver-xorg-video-all.
   * Inline all vars files into control.
   * Remove redundant xserver-xorg-input-evdev from xserver-xorg (Already
     in -input-all).
-  * Add xserver-xorg-video-intel on kfreebsd-any.
-  * Add xserver-xorg-video-freedreno on armel and armhf.
-  * Add xserver-xorg-video-nouveau on arm64.
+  * Simplify and consolidate xserver-xorg-{input,video}-all:
+    - Use architecture wildcards.
+    - Add support for mips64el (Closes: #755482).
+    - Add xserver-xorg-video-intel on kfreebsd-any.
+    - Add xserver-xorg-video-freedreno on armel and armhf.
+    - Add xserver-xorg-video-nouveau on arm64.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 31 Aug 2015 18:37:12 +0200
 
