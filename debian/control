@@ -78,7 +78,7 @@ Depends:
  xserver-xorg-input-void [s390x],
  ${misc:Depends},
 Recommends:
- xserver-xorg-input-wacom [alpha amd64 armel armhf hppa i386 mips mips64el mips powerpc powerpcspe sh4 sparc64 x32],
+ xserver-xorg-input-wacom [!hurd-any !kfreebsd-any !s390x],
 Description: X.Org X server -- input driver metapackage
  This package depends on the full suite of input drivers for the X.Org X server
  (Xorg).  It does not provide any drivers itself, and may be removed if you wish
