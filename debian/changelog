@@ -1,5 +1,7 @@
-xorg (1:7.7+12) UNRELEASED; urgency=medium
+xorg (1:7.7+12) unstable; urgency=medium
 
+  * Team upload.
+  [ Andreas Boll ]
   * Merge xsf-docs up to 4116d1e commit:
     - build-mesa: Drop nouveau note
     - build-mesa: Update ./configure options
@@ -21,7 +23,7 @@ xorg (1:7.7+12) UNRELEASED; urgency=medium
     - Add xserver-xorg-video-freedreno on armel and armhf.
     - Add xserver-xorg-video-nouveau on arm64.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Mon, 31 Aug 2015 18:37:12 +0200
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 08 Oct 2015 10:24:27 +0200
 
 xorg (1:7.7+11) experimental; urgency=medium
 
