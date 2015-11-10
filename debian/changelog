@@ -1,3 +1,28 @@
+xorg (1:7.7+12ubuntu1) UNRELEASED; urgency=medium
+
+  * Merge from Debian, remaining changes:
+    - control: add xserver-xorg-video-geode for i386 Suggests
+    - control: demote 'xserver-xorg-video-all | xorg-driver-video' to
+      Recommends.
+    - control: promote xserver-xorg-input-wacom to Depends
+    - control: drop depend on libgl*-mesa* on armhf
+    - control: add xinput to xorg Depends
+    - control: demote xfonts-{100dpi,75dpi,scalable} * to xorg
+      Recommends/Suggests
+    - local/Xsession: truncate ERRFILE if it's too big
+    - local/Xsession.d/20x11-common_process-args: Add support for
+      session command containing args (LP: 512235)
+    - local/Xsession.d/60x11-common_xdg_path: added to set
+      xdg path depending on the selected session (compatible with
+      lightdm, gdm and kdm now) (LP: 804734)
+  * Drop obsolete diff:
+    - depends on x11-common because of doc dir symlinking, which is now
+      handled by pkgbinarymangler
+    - x11-common.{postinst,preinst,prerm}.in: removing old failsafe-x
+      files is obsolete since a few years
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 10 Nov 2015 16:03:02 +0200
+
 xorg (1:7.7+12) unstable; urgency=medium
 
   * Team upload.
