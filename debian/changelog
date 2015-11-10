@@ -1,3 +1,11 @@
+xorg (1:7.7+7ubuntu4) vivid; urgency=medium
+
+  * xorg-server 1.17 no longer requires a driver because
+    modesetting is moved to xserver-xorg-core, change
+    xserver-xorg-video-all | xorg-driver-video to recommends.
+
+ -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Mon, 16 Mar 2015 18:45:44 +0100
+
 xorg (1:7.7+7ubuntu3) vivid; urgency=medium
 
   * Modesetting has been removed, remove from vars.
