@@ -3,17 +3,17 @@ Section: x11
 Priority: optional
 Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: Drew Parsons <dparsons@debian.org>, Cyril Brulebois <kibi@debian.org>
 Standards-Version: 3.9.5
 Build-Depends:
  dpkg (>= 1.16.1),
- debhelper (>= 7.3.15ubuntu3),
+ debhelper (>= 9),
  po-debconf,
 # xsf-docs:
  asciidoc,
  inkscape,
-Vcs-Git: git://anonscm.debian.org/pkg-xorg/debian/xorg
+Vcs-Git: https://anonscm.debian.org/git/pkg-xorg/debian/xorg.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-xorg/debian/xorg.git
+Homepage: http://www.x.org/
 
 Package: x11-common
 Architecture: all
@@ -34,9 +34,9 @@ Description: X Window System (X.Org) infrastructure
 Package: xserver-xorg
 Architecture: any
 Depends:
- xserver-xorg-core (>= 2:1.17),
+ xserver-xorg-core (>= 2:1.17.2-2),
+ xserver-xorg-legacy [!linux-any],
  xserver-xorg-input-all | xorg-driver-input,
- xserver-xorg-input-evdev [linux-any],
  ${shlibs:Depends},
  ${misc:Depends},
  xkb-data (>= 1.4),
@@ -52,12 +52,19 @@ Description: X.Org X server
 Package: xserver-xorg-video-all
 Architecture: any
 Depends:
- ${F:XServer-Xorg-Video-Depends},
+ xserver-xorg-video-ati [!hurd-any !s390x],
+ xserver-xorg-video-fbdev [!s390x],
+ xserver-xorg-video-freedreno [armel armhf],
+ xserver-xorg-video-dummy [s390x],
+ xserver-xorg-video-intel [amd64 i386 kfreebsd-any x32],
+ xserver-xorg-video-nouveau [amd64 arm64 armhf i386 powerpc x32],
+ xserver-xorg-video-vesa [!s390x],
+ xserver-xorg-video-vmware [amd64 hurd-i386 i386 x32],
  ${misc:Depends},
 Recommends:
- ${F:XServer-Xorg-Video-Recommends},
+ xserver-xorg-video-qxl [amd64 i386 x32],
 Suggests:
- ${F:XServer-Xorg-Video-Suggests},
+ xserver-xorg-video-geode [i386],
 Replaces: xserver-xorg-driver-all
 Conflicts: xserver-xorg-driver-all
 Description: X.Org X server -- output driver metapackage
@@ -68,10 +75,15 @@ Description: X.Org X server -- output driver metapackage
 Package: xserver-xorg-input-all
 Architecture: any
 Depends:
- ${F:XServer-Xorg-Input-Depends},
+ xserver-xorg-input-evdev [linux-any],
+ xserver-xorg-input-kbd [!linux-any],
+ xserver-xorg-input-mouse [!linux-any],
+ xserver-xorg-input-synaptics [!s390x],
+ xserver-xorg-input-vmmouse [amd64 i386 x32],
+ xserver-xorg-input-void [s390x],
+ xserver-xorg-input-wacom [!hurd-any !kfreebsd-any !s390x],
  ${misc:Depends},
 Recommends:
- ${F:XServer-Xorg-Input-Recommends},
 Description: X.Org X server -- input driver metapackage
  This package depends on the full suite of input drivers for the X.Org X server
  (Xorg).  It does not provide any drivers itself, and may be removed if you wish
@@ -97,7 +109,6 @@ Depends:
  xorg-docs-core,
  xterm | x-terminal-emulator,
  ${misc:Depends},
- x11-common,
  xinput,
 Recommends:
  xfonts-scalable (>= 1:1.0.0-1),
@@ -179,7 +190,6 @@ Depends:
  xserver-xorg-dev,
  xtrans-dev,
  ${misc:Depends},
- x11-common,
 Description: X.Org X Window System development libraries
  This metapackage provides the development libraries for the X.Org X Window
  System.
@@ -203,7 +213,6 @@ Depends:
  xauth,
  xinit,
  ${misc:Depends},
- x11-common,
 Suggests:
  x11-xfs-utils,
 Description: miscellaneous X clients - metapackage
@@ -227,7 +236,6 @@ Depends:
  x11-session-utils,
  xfonts-utils,
  ${misc:Depends},
- x11-common,
 Suggests:
  x11-xfs-utils,
 Description: X Window System utility programs metapackage

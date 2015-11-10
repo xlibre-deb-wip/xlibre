@@ -1,3 +1,52 @@
+xorg (1:7.7+12) unstable; urgency=medium
+
+  * Team upload.
+  [ Andreas Boll ]
+  * Merge xsf-docs up to 4116d1e commit:
+    - build-mesa: Drop nouveau note
+    - build-mesa: Update ./configure options
+    - build-mesa: Drop obsolete FIXME and s/test_application/es2_info/
+    - build-mesa: Drop obsolete information for squeeze
+  * Drop vars files for unsupported architectures: arm, armeb, ia64,
+    m32r, s390 and sparc.
+  * Add upstream url.
+  * Use https for Vcs-* fields.
+  * Remove all non-KMS (except fbdev and vesa) drivers from
+    xserver-xorg-video-all.
+  * Inline all vars files into control.
+  * Remove redundant xserver-xorg-input-evdev from xserver-xorg (Already
+    in -input-all).
+  * Simplify and consolidate xserver-xorg-{input,video}-all:
+    - Use architecture wildcards.
+    - Add support for mips64el (Closes: #755482).
+    - Add xserver-xorg-video-intel on kfreebsd-any.
+    - Add xserver-xorg-video-freedreno on armel and armhf.
+    - Add xserver-xorg-video-nouveau on arm64.
+
+ -- Laurent Bigonville <bigon@debian.org>  Thu, 08 Oct 2015 10:24:27 +0200
+
+xorg (1:7.7+11) experimental; urgency=medium
+
+  * Fix arch-specific build broken in 1:7.7+10.
+
+ -- Julien Cristau <jcristau@debian.org>  Fri, 21 Aug 2015 16:39:20 +0200
+
+xorg (1:7.7+10) experimental; urgency=medium
+
+  * Stop shipping the /usr/bin/X setuid wrapper and associated
+    Xwrapper.config, those are now in xserver-xorg-legacy.
+  * Convert d/rules to dh.
+
+ -- Julien Cristau <jcristau@debian.org>  Fri, 21 Aug 2015 09:46:32 +0200
+
+xorg (1:7.7+9) unstable; urgency=medium
+
+  * Remove the siliconmotion driver from xserver-xorg-video-all.
+  * Remove Cyril and Drew from Uploaders.
+  * Bump debhelper compat level to 9.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 11 May 2015 14:53:51 +0200
+
 xorg (1:7.7+7ubuntu4) vivid; urgency=medium
 
   * xorg-server 1.17 no longer requires a driver because
@@ -13,7 +62,7 @@ xorg (1:7.7+7ubuntu3) vivid; urgency=medium
 
  -- Maarten Lankhorst <maarten.lankhorst@ubuntu.com>  Mon, 09 Mar 2015 11:51:24 +0100
 
-xorg (1:7.7+8) UNRELEASED; urgency=medium
+xorg (1:7.7+8) unstable; urgency=medium
 
   [ Laurent Bigonville ]
   * debian/x11-common.init: Add Short-Description field (Closes: #510087)
@@ -27,7 +76,7 @@ xorg (1:7.7+8) UNRELEASED; urgency=medium
   * Remove creation of /etc/X11/X symlink, but keep existing.
   * Do not chdir to /etc/X11 if the symlink has an absolute path.
 
- -- Laurent Bigonville <bigon@debian.org>  Wed, 24 Sep 2014 12:57:17 +0200
+ -- Julien Cristau <jcristau@debian.org>  Sat, 02 May 2015 19:12:00 +0200
 
 xorg (1:7.7+7ubuntu2) utopic; urgency=medium
 
