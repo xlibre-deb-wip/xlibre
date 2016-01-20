@@ -50,6 +50,7 @@ Description: X.Org X server
 Package: xserver-xorg-video-all
 Architecture: any
 Depends:
+ xserver-xorg-video-amdgpu [amd64 i386 kfreebsd-any x32],
  xserver-xorg-video-ati [!hurd-any !s390x],
  xserver-xorg-video-fbdev [!s390x],
  xserver-xorg-video-freedreno [armel armhf],
