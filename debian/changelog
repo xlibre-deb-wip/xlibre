@@ -6,6 +6,7 @@ xorg (1:7.7+13) UNRELEASED; urgency=medium
       Thanks, Eduard Sanou!
   * rules: Remove unused variable ARCH.
   * Delete obsolete debian/xsfbs.
+  * Bump Standards-Version to 3.9.6 (no changes needed).
 
   [ Timo Aaltonen ]
   * control: Add xserver-xorg-video-amdgpu to -video-all Depends.
