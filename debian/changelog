@@ -1,3 +1,10 @@
+xorg (1:7.7+14) UNRELEASED; urgency=medium
+
+  * control: Drop -intel from -video-all, the default 2D-driver will be
+    -modesetting.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 27 Jan 2016 13:41:35 +0200
+
 xorg (1:7.7+13) unstable; urgency=medium
 
   [ Andreas Boll ]
