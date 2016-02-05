@@ -1,3 +1,18 @@
+xorg (1:7.7+13) unstable; urgency=medium
+
+  [ Andreas Boll ]
+  * Merge xsf-docs up to 13946cb commit:
+    - makefile: Set TZ=UTC before calling asciidoc (Closes: #795985).
+      Thanks, Eduard Sanou!
+  * rules: Remove unused variable ARCH.
+  * Delete obsolete debian/xsfbs.
+  * Bump Standards-Version to 3.9.6 (no changes needed).
+
+  [ Timo Aaltonen ]
+  * control: Add xserver-xorg-video-amdgpu to -video-all Depends.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 26 Jan 2016 18:24:15 +0200
+
 xorg (1:7.7+12ubuntu1) xenial; urgency=medium
 
   * Merge from Debian, remaining changes:

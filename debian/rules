@@ -1,7 +1,5 @@
 #!/usr/bin/make -f
 
-ARCH ?= $(shell dpkg-architecture -qDEB_HOST_ARCH)
-
 %:
 	dh $@ --parallel
 

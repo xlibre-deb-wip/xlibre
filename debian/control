@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Build-Depends:
  dpkg (>= 1.16.1),
  debhelper (>= 9),
@@ -42,8 +42,8 @@ Depends:
  xkb-data (>= 1.4),
  x11-xkb-utils
 Recommends:
- xserver-xorg-video-all | xorg-driver-video,
  libgl1-mesa-dri,
+ xserver-xorg-video-all | xorg-driver-video,
 Provides: xserver
 Description: X.Org X server
  This package depends on the full suite of the server and drivers for the
@@ -52,6 +52,7 @@ Description: X.Org X server
 Package: xserver-xorg-video-all
 Architecture: any
 Depends:
+ xserver-xorg-video-amdgpu [!hurd-any !kfreebsd-any !s390x],
  xserver-xorg-video-ati [!hurd-any !s390x],
  xserver-xorg-video-fbdev [!s390x],
  xserver-xorg-video-freedreno [armel armhf],
