@@ -57,12 +57,12 @@ Depends:
  xserver-xorg-video-fbdev [!s390x],
  xserver-xorg-video-freedreno [armel armhf],
  xserver-xorg-video-dummy [s390x],
- xserver-xorg-video-intel [amd64 i386 kfreebsd-any x32],
  xserver-xorg-video-nouveau [amd64 arm64 armhf i386 powerpc x32],
  xserver-xorg-video-vesa [!s390x],
  xserver-xorg-video-vmware [amd64 hurd-i386 i386 x32],
  ${misc:Depends},
 Recommends:
+ xserver-xorg-video-intel [amd64 i386 kfreebsd-any x32],
  xserver-xorg-video-qxl [amd64 i386 x32],
 Suggests:
  xserver-xorg-video-geode [i386],
