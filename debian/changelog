@@ -1,3 +1,10 @@
+xorg (1:7.7+13ubuntu3) xenial; urgency=medium
+
+  * control: Drop freedreno and void from video/input-all so that they
+    don't block the transition while MIR's are being processed.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 04 Mar 2016 16:53:04 +0200
+
 xorg (1:7.7+13ubuntu2) xenial; urgency=medium
 
   * control: Demote -intel to -video-all Recommends, allowing uninstall
