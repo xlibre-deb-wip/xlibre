@@ -1,4 +1,4 @@
-xorg (1:7.7+14) UNRELEASED; urgency=medium
+xorg (1:7.7+14) unstable; urgency=medium
 
   [ Timo Aaltonen ]
   * control: Demote -intel to -video-all Recommends, allowing to uninstall
@@ -7,7 +7,7 @@ xorg (1:7.7+14) UNRELEASED; urgency=medium
   [ Andreas Boll ]
   * Add xserver-xorg-video-freedreno to -video-all on arm64.
 
- -- Timo Aaltonen <tjaalton@debian.org>  Wed, 27 Jan 2016 13:41:35 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 08 Mar 2016 15:07:40 +0200
 
 xorg (1:7.7+13) unstable; urgency=medium
 
