@@ -1,8 +1,8 @@
 xorg (1:7.7+14) UNRELEASED; urgency=medium
 
   [ Timo Aaltonen ]
-  * control: Drop -intel from -video-all, the default 2D-driver will be
-    -modesetting.
+  * control: Demote -intel to -video-all Recommends, allowing to uninstall
+    it if necessary.
 
   [ Andreas Boll ]
   * Add xserver-xorg-video-freedreno to -video-all on arm64.
