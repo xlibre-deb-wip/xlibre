@@ -1,3 +1,9 @@
+xorg (1:7.7+15) UNRELEASED; urgency=medium
+
+  * Make x-x-input-all depend on x-x-input-libinput. Closes: #821760.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 20 Apr 2016 19:32:45 +0200
+
 xorg (1:7.7+14) unstable; urgency=medium
 
   [ Timo Aaltonen ]
