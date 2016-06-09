@@ -1,3 +1,10 @@
+xorg (1:7.7+16) UNRELEASED; urgency=medium
+
+  * control: Drop -evdev and -synaptics from x-x-input-all Depends for
+    linux.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Thu, 09 Jun 2016 14:10:30 +0300
+
 xorg (1:7.7+15) unstable; urgency=medium
 
   * Make x-x-input-all depend on x-x-input-libinput. Closes: #821760.
