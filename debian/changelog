@@ -1,7 +1,12 @@
 xorg (1:7.7+16) UNRELEASED; urgency=medium
 
+  [ Timo Aaltonen ]
   * control: Drop -evdev and -synaptics from x-x-input-all Depends for
     linux.
+
+  [ Julien Cristau ]
+  * Drop xserver-xorg-input-void from s390x.  The server can come up with no
+    input devices nowadays, -input-void isn't necessary.
 
  -- Timo Aaltonen <tjaalton@debian.org>  Thu, 09 Jun 2016 14:10:30 +0300
 
