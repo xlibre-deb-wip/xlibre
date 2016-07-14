@@ -8,6 +8,12 @@ xorg (1:7.7+16) UNRELEASED; urgency=medium
   * Drop xserver-xorg-input-void from s390x.  The server can come up with no
     input devices nowadays, -input-void isn't necessary.
 
+  [ Cyril Brulebois ]
+  * Drop xserver-xorg-input-vmmouse from xserver-xorg-input-all Depends,
+    since the kernel driver for the VMware mouse device is incompatible
+    with Xorg's vmmouse driver but works with the generic evdev and
+    libinput drivers. Closes: #831286
+
  -- Timo Aaltonen <tjaalton@debian.org>  Thu, 09 Jun 2016 14:10:30 +0300
 
 xorg (1:7.7+15) unstable; urgency=medium

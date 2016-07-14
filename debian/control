@@ -76,7 +76,6 @@ Depends:
  xserver-xorg-input-libinput [linux-any],
  xserver-xorg-input-mouse [!linux-any],
  xserver-xorg-input-synaptics [!linux-any],
- xserver-xorg-input-vmmouse [amd64 i386 x32],
  ${misc:Depends},
 Recommends:
  xserver-xorg-input-wacom [!hurd-any !kfreebsd-any !s390x],
