@@ -1,3 +1,10 @@
+xorg (1:7.7+13ubuntu4) UNRELEASED; urgency=medium
+
+  * control: Drop vmmouse from -input-all depends, our kernel has had
+    the virtual driver for some time.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 03 Aug 2016 01:54:36 +0300
+
 xorg (1:7.7+13ubuntu3) xenial; urgency=medium
 
   * control: Drop freedreno and void from video/input-all so that they

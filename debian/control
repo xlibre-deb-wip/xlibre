@@ -80,7 +80,6 @@ Depends:
  xserver-xorg-input-kbd [!linux-any],
  xserver-xorg-input-mouse [!linux-any],
  xserver-xorg-input-synaptics [!s390x],
- xserver-xorg-input-vmmouse [amd64 i386 x32],
 # xserver-xorg-input-void [s390x],
  xserver-xorg-input-wacom [!hurd-any !kfreebsd-any !s390x],
  ${misc:Depends},
