@@ -1,9 +1,10 @@
-xorg (1:7.7+13ubuntu4) UNRELEASED; urgency=medium
+xorg (1:7.7+13ubuntu4) yakkety; urgency=medium
 
+  [ Timo Aaltonen ]
   * control: Drop vmmouse from -input-all depends, our kernel has had
     the virtual driver for some time.
 
- -- Timo Aaltonen <tjaalton@debian.org>  Wed, 03 Aug 2016 01:54:36 +0300
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 27 Sep 2016 10:08:59 -0700
 
 xorg (1:7.7+13ubuntu3) xenial; urgency=medium
 
