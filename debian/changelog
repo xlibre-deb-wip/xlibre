@@ -1,3 +1,65 @@
+xorg (1:7.7+16ubuntu1) zesty; urgency=low
+
+  * Merge from Debian unstable.  Remaining changes:
+    - control: add xserver-xorg-video-geode for i386 Suggests
+    - control: demote 'xserver-xorg-video-all | xorg-driver-video' to
+      Recommends.
+    - control: promote xserver-xorg-input-wacom to Depends
+    - control: drop depend on libgl*-mesa* on armhf
+    - control: add xinput to xorg Depends
+    - control: demote xfonts-{100dpi,75dpi,scalable} * to xorg
+      Recommends/Suggests
+    - local/Xsession: truncate ERRFILE if it's too big
+    - local/Xsession.d/20x11-common_process-args: Add support for
+      session command containing args (LP: 512235)
+    - local/Xsession.d/60x11-common_xdg_path: added to set
+      xdg path depending on the selected session (compatible with
+      lightdm, gdm and kdm now) (LP: 804734)
+  * Dropped changes:
+    - control: Drop freedreno and void from video/input-all.
+  * Dropped changes, included in Debian:
+    - control: Drop vmmouse from -input-all depends, our kernel has had
+      the virtual driver for some time.
+    - control: Demote -intel to -video-all Recommends, allowing uninstall
+      without removing the metapackage.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Tue, 18 Oct 2016 22:04:21 -0700
+
+xorg (1:7.7+16) unstable; urgency=medium
+
+  [ Timo Aaltonen ]
+  * control: Drop -evdev and -synaptics from x-x-input-all Depends for
+    linux.
+
+  [ Julien Cristau ]
+  * Drop xserver-xorg-input-void from s390x.  The server can come up with no
+    input devices nowadays, -input-void isn't necessary.
+
+  [ Cyril Brulebois ]
+  * Drop xserver-xorg-input-vmmouse from xserver-xorg-input-all Depends,
+    since the kernel driver for the VMware mouse device is incompatible
+    with Xorg's vmmouse driver but works with the generic evdev and
+    libinput drivers. Closes: #831286
+
+ -- Cyril Brulebois <kibi@debian.org>  Thu, 14 Jul 2016 15:32:12 +0200
+
+xorg (1:7.7+15) unstable; urgency=medium
+
+  * Make x-x-input-all depend on x-x-input-libinput. Closes: #821760.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Sat, 23 Apr 2016 12:09:18 +0200
+
+xorg (1:7.7+14) unstable; urgency=medium
+
+  [ Timo Aaltonen ]
+  * control: Demote -intel to -video-all Recommends, allowing to uninstall
+    it if necessary.
+
+  [ Andreas Boll ]
+  * Add xserver-xorg-video-freedreno to -video-all on arm64.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 08 Mar 2016 15:07:40 +0200
+
 xorg (1:7.7+13ubuntu4) yakkety; urgency=medium
 
   [ Timo Aaltonen ]
