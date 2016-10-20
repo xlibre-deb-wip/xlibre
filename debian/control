@@ -80,9 +80,10 @@ Depends:
  xserver-xorg-input-libinput [linux-any],
  xserver-xorg-input-mouse [!linux-any],
  xserver-xorg-input-synaptics [!linux-any],
- xserver-xorg-input-wacom [!hurd-any !kfreebsd-any !s390x],
  ${misc:Depends},
 Recommends:
+ xserver-xorg-input-synaptics [linux-any],
+ xserver-xorg-input-wacom [!hurd-any !kfreebsd-any !s390x],
 Description: X.Org X server -- input driver metapackage
  This package depends on the full suite of input drivers for the X.Org X server
  (Xorg).  It does not provide any drivers itself, and may be removed if you wish
