@@ -1,4 +1,4 @@
-xorg (1:7.7+17) UNRELEASED; urgency=medium
+xorg (1:7.7+17) unstable; urgency=medium
 
   [ Andreas Boll ]
   * control: Drop -freedreno from -video-all, the default 2D-driver will
@@ -9,7 +9,7 @@ xorg (1:7.7+17) UNRELEASED; urgency=medium
   * Bump Standards-Version to 3.9.8. No changes.
   * Bump debhelper compat to 10. Drop --parallel flag, enabled by default.
 
- -- Andreas Boll <andreas.boll.dev@gmail.com>  Thu, 17 Nov 2016 14:01:37 +0100
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 23 Nov 2016 00:02:26 +0100
 
 xorg (1:7.7+16) unstable; urgency=medium
 
