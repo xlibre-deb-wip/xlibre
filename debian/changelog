@@ -6,6 +6,7 @@ xorg (1:7.7+17) UNRELEASED; urgency=medium
 
   [ Emilio Pozuelo Monfort ]
   * debian/x11-common.postinst: call `set -e'.
+  * Bump Standards-Version to 3.9.8. No changes.
 
  -- Andreas Boll <andreas.boll.dev@gmail.com>  Thu, 17 Nov 2016 14:01:37 +0100
 
