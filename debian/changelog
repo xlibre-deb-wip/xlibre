@@ -1,3 +1,9 @@
+xorg-hwe-16.04 (1:7.7+13ubuntu4~16.04.02) xenial; urgency=medium
+
+  * Backport for hwe-16.04 stack.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 20 Jan 2017 09:44:15 +0200
+
 xorg (1:7.7+13ubuntu4) yakkety; urgency=medium
 
   [ Timo Aaltonen ]
