@@ -1,4 +1,4 @@
-xorg-hwe-16.04 (1:7.7+13ubuntu4~16.04.03) xenial; urgency=medium
+xorg-hwe-16.04 (1:7.7+13ubuntu4~16.04.1) xenial; urgency=medium
 
   * Backport for hwe-16.04 stack.
 
