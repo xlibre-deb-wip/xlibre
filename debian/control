@@ -45,7 +45,7 @@ Recommends:
  libgl1-mesa-dri, linux-generic-hwe-16.04, ,
  xserver-xorg-video-all-hwe-16.04 | xorg-driver-video,
 Provides:
- xserver-xorg, xorg-renamed-package, xorg-renamed-package-hwe-16.04,
+ xserver-xorg (= ${binary:Version}), xorg-renamed-package, xorg-renamed-package-hwe-16.04,
  xserver, xserver-xorg-renamed
 Description: X.Org X server
  This package depends on the full suite of the server and drivers for the
