@@ -43,7 +43,7 @@ Depends:
  x11-xkb-utils
 Recommends:
  libgl1-mesa-dri, linux-generic-hwe-16.04, ,
- xserver-xorg-video-all-hwe-16.04 | xorg-driver-video,
+ xserver-xorg-video-all-hwe-16.04,
 Provides:
  xserver-xorg (= ${binary:Version}), xorg-renamed-package, xorg-renamed-package-hwe-16.04,
  xserver, xserver-xorg-renamed
