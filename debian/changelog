@@ -2,6 +2,8 @@ xorg (1:7.7+16ubuntu3) UNRELEASED; urgency=medium
 
   * control: Drop alt recommends on xorg-driver-video, because it makes
     no sense for Recommends.
+  * control: Drop xserver-xorg-video-freedreno from video-all (arm).
+    (LP: #1679323)
 
  -- Timo Aaltonen <tjaalton@debian.org>  Wed, 01 Feb 2017 10:44:07 +0200
 
