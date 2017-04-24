@@ -1,3 +1,24 @@
+xorg (1:7.7+18) unstable; urgency=medium
+
+  * Call db_purge without arguments in postinst to fix error uncovered by
+    adding "set -e" in 1:7.7+17 (closes: #845398).  Thanks, Samuel Thibault
+    and Tianon Gravi!
+
+ -- Julien Cristau <jcristau@debian.org>  Wed, 23 Nov 2016 08:50:50 +0100
+
+xorg (1:7.7+17) unstable; urgency=medium
+
+  [ Andreas Boll ]
+  * control: Drop -freedreno from -video-all, the default 2D-driver will
+    be -modesetting.
+
+  [ Emilio Pozuelo Monfort ]
+  * debian/x11-common.postinst: call `set -e'.
+  * Bump Standards-Version to 3.9.8. No changes.
+  * Bump debhelper compat to 10. Drop --parallel flag, enabled by default.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Wed, 23 Nov 2016 00:02:26 +0100
+
 xorg (1:7.7+16ubuntu3) zesty; urgency=medium
 
   * control: Drop alt recommends on xorg-driver-video, because it makes

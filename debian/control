@@ -3,14 +3,13 @@ Section: x11
 Priority: optional
 Maintainer: Ubuntu X-SWAT <ubuntu-x@lists.ubuntu.com>
 XSBC-Original-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Build-Depends:
  dpkg (>= 1.16.1),
- debhelper (>= 9),
+ debhelper (>= 10),
  po-debconf,
 # xsf-docs:
  asciidoc,
- inkscape,
 Vcs-Git: https://anonscm.debian.org/git/pkg-xorg/debian/xorg.git
 Vcs-Browser: https://anonscm.debian.org/cgit/pkg-xorg/debian/xorg.git
 Homepage: http://www.x.org/
@@ -81,7 +80,6 @@ Depends:
  xserver-xorg-input-synaptics [!linux-any],
  ${misc:Depends},
 Recommends:
- xserver-xorg-input-synaptics [linux-any],
  xserver-xorg-input-wacom [!hurd-any !kfreebsd-any !s390x],
 Description: X.Org X server -- input driver metapackage
  This package depends on the full suite of input drivers for the X.Org X server
