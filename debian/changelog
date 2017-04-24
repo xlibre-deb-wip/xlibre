@@ -1,3 +1,10 @@
+xorg (1:7.7+18ubuntu1) artful; urgency=medium
+
+  * Merge from Debian.
+    - drop -synaptics from -input-all Recommends (LP: #1685542)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Mon, 24 Apr 2017 16:38:55 +0300
+
 xorg (1:7.7+18) unstable; urgency=medium
 
   * Call db_purge without arguments in postinst to fix error uncovered by
