@@ -42,6 +42,7 @@ Depends:
  x11-xkb-utils
 Recommends:
  libgl1-mesa-dri,
+ xserver-xorg-legacy [linux-any],
  xserver-xorg-video-all,
 Provides: xserver
 Description: X.Org X server
