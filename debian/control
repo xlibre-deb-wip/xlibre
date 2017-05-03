@@ -42,6 +42,7 @@ Depends:
  x11-xkb-utils
 Recommends:
  libgl1-mesa-dri,
+ xserver-xorg-legacy [linux-any],
 Provides: xserver
 Description: X.Org X server
  This package depends on the full suite of the server and drivers for the
