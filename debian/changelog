@@ -2,6 +2,8 @@ xorg (1:7.7+19ubuntu2) UNRELEASED; urgency=medium
 
   * control, source_xorg.py, xserver-xorg.install, rules: Import apport package
     hook and links from xdiagnose 3.8.7.
+  * source_xorg.py: Drop obsolete stuff from the hook, attach Xorg.0.log
+    from home directory.
 
  -- Timo Aaltonen <tjaalton@debian.org>  Tue, 29 Aug 2017 13:57:00 +0300
 

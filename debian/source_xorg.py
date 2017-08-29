@@ -115,7 +115,6 @@ def is_xorg_input_package(pkg):
 def is_xorg_video_package(pkg):
     if (pkg[:18] == 'xserver-xorg-video' or
         pkg[:6] == 'nvidia' or
-        pkg[:5] == 'fglrx' or
         pkg[:10] == 'xf86-video'):
         return True
     else:
@@ -132,7 +131,7 @@ def nonfree_graphics_module(module_list = '/proc/modules'):
         return None
 
     for m in mods:
-        if m == "nvidia" or m == "fglrx":
+        if m == "nvidia":
             return m
 
 def attach_command_output(report, command_list, key):
@@ -331,7 +330,6 @@ def attach_xorg_package_versions(report, ui=None):
         "xserver-xorg-core",
         "libgl1-mesa-glx",
         "libgl1-mesa-dri",
-        "libgl1-mesa-dri-experimental",
         "libdrm2",
         "compiz",
         "xserver-xorg-input-evdev",
@@ -339,18 +337,23 @@ def attach_xorg_package_versions(report, ui=None):
         "xserver-xorg-video-ati",
         "xserver-xorg-video-nouveau"]:
         report['version.%s' %(package)] = package_versions(package)
-    if report.get('Architecture', '') == 'amd64':
-        report['version.ia32-libs'] = package_versions('ia32-libs')
 
 def attach_xorg_info(report, ui=None):
     '''
     Attaches basic xorg debugging info
     '''
+    from pathlib import Path
+    HomeXorgLog = os.path.join(str(Path.home()), '.local/share/xorg/Xorg.0.log')
+
     attach_file_if_exists(report, '/var/log/boot.log', 'BootLog')
     attach_file_if_exists(report, '/var/log/plymouth-debug.log', 'PlymouthDebug')
     attach_file_if_exists(report, '/etc/X11/xorg.conf', 'XorgConf')
-    attach_file_if_exists(report, '/var/log/Xorg.0.log', 'XorgLog')
-    attach_file_if_exists(report, '/var/log/Xorg.0.log.old', 'XorgLogOld')
+    if os.path.exists(HomeXorgLog) :
+        attach_file_if_exists(report, HomeXorgLog, 'XorgLog')
+        attach_file_if_exists(report, HomeXorgLog + '.old', 'XorgLogOld')
+    else:
+        attach_file_if_exists(report, '/var/log/Xorg.0.log', 'XorgLog')
+        attach_file_if_exists(report, '/var/log/Xorg.0.log.old', 'XorgLogOld')
 
     if os.path.lexists('/var/log/Xorg.0.log') and has_xorglog:
         try:
@@ -541,23 +544,6 @@ def attach_nvidia_info(report, ui=None):
         if report.get('SourcePackage','Unknown') in core_x_packages:
             report['SourcePackage'] = "nvidia-graphics-drivers"
 
-def attach_fglrx_info(report, ui=None):
-    '''
-    Gathers special files for the fglrx proprietary driver
-    '''
-    if nonfree_graphics_module() != 'fglrx':
-        return
-
-    report['version.fglrx-installer'] = package_versions("fglrx-installer")
-
-    attach_command_output(report, ['jockey-text', '-l'], 'JockeyStatus')
-    attach_command_output(report, ['update-alternatives', '--display', 'gl_conf'], 'GlConf')
-
-    # File any X crash with -fglrx involved with the -fglrx bugs
-    if report.get('SourcePackage','Unknown') in core_x_packages:
-        if (report.get('ProblemType', '') == 'Crash' and 'Traceback' not in report):
-            report['SourcePackage'] = "fglrx-installer"
-
 def attach_gpu_hang_info(report, ui):
     '''
     Surveys reporter for some additional clarification on GPU freezes
@@ -675,8 +661,6 @@ def add_info(report, ui):
         attach_dkms_info(report, ui)
         debug("attach_nvidia_info")
         attach_nvidia_info(report, ui)
-        debug("attach_fglrx_info")
-        attach_fglrx_info(report, ui)
         debug("attach_2d_info")
         attach_2d_info(report, ui)
         debug("attach_3d_info")
