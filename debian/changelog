@@ -1,9 +1,9 @@
-xorg (1:7.7+19ubuntu3) UNRELEASED; urgency=medium
+xorg (1:7.7+19ubuntu3) bionic; urgency=medium
 
   * control: Add python3-apport to xserver-xorg depends due to the apport hook.
     (LP: #1730035)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Sat, 04 Nov 2017 07:56:48 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Sat, 04 Nov 2017 08:51:54 +0200
 
 xorg (1:7.7+19ubuntu2) artful; urgency=medium
 
