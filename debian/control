@@ -39,7 +39,8 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  xkb-data (>= 1.4),
- x11-xkb-utils
+ x11-xkb-utils,
+ python3-apport,
 Recommends:
  libgl1-mesa-dri,
  xserver-xorg-legacy [linux-any],
