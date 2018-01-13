@@ -9,9 +9,9 @@ Build-Depends:
  po-debconf,
 # xsf-docs:
  asciidoc,
-Vcs-Git: https://anonscm.debian.org/git/pkg-xorg/debian/xorg.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-xorg/debian/xorg.git
-Homepage: http://www.x.org/
+Vcs-Git: https://salsa.debian.org/xorg-team/debian/xorg
+Vcs-Browser: https://salsa.debian.org/xorg-team/debian/xorg
+Homepage: https://www.x.org/
 
 Package: x11-common
 Architecture: all

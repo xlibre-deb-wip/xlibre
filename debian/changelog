@@ -1,3 +1,9 @@
+xorg (1:7.7+20) UNRELEASED; urgency=medium
+
+  * Update docs for alioth→salsa move.
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 13 Jan 2018 15:34:33 +0100
+
 xorg (1:7.7+19) unstable; urgency=high
 
   * Team upload.

@@ -10,8 +10,8 @@ xserver-xorg (1:7.4+1) unstable; urgency=low
   use the mouse or kbd driver are ignored by the X server by default.
 
   For more details, see:
-  http://who-t.blogspot.com/2008/12/evdev-xorgconf-hal-and-other-fud.html
-  http://who-t.blogspot.com/2008/10/new-keyboard-configuration-handling.html
+  https://who-t.blogspot.com/2008/12/evdev-xorgconf-hal-and-other-fud.html
+  https://who-t.blogspot.com/2008/10/new-keyboard-configuration-handling.html
 
   * keycodes changes will break custom Xmodmaps
 
