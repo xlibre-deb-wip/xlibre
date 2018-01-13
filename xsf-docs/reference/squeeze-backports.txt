@@ -25,7 +25,7 @@ package maintainers.
 Instructions
 ------------
 
-The usual link:http://backports-master.debian.org/[backports instructions]
+The usual link:https://backports.debian.org/[backports instructions]
 apply. But let’s gather everything in a single place.
 
 Add that to your `sources.list`:

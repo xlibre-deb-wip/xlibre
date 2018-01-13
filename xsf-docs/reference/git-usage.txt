@@ -6,7 +6,7 @@ Cyril Brulebois <kibi@debian.org>
 
 [NOTE]
 The old documentation is still available on the wiki:
-http://wiki.debian.org/XStrikeForce/git-usage[wiki.debian.org/XSF/git-usage];
+https://wiki.debian.org/XStrikeForce/git-usage[wiki.debian.org/XSF/git-usage];
 this documentation is just a draft for now.
 
 
@@ -14,11 +14,11 @@ Getting started
 ---------------
 
 Upstream repositories are hosted on
-http://cgit.freedesktop.org/[git.freedesktop.org]
+https://cgit.freedesktop.org/[git.freedesktop.org]
 
 Debian repositories are hosted on
-http://git.debian.org/[git.debian.org] under the `pkg-xorg/*`
-namespace. Each repository is about a single Debian source package.
+https://salsa.debian.org/[salsa.debian.org] under the `xorg-team`
+group. Each repository is about a single Debian source package.
 
 We have two types of repositories:
 
@@ -29,26 +29,26 @@ We have two types of repositories:
 
 A local git repository can have several remotes. In the context of
 Debian packaging, one usually starts by cloning the Debian repository,
-so `origin` will likely point to `git.debian.org`. One can use
+so `origin` will likely point to `salsa.debian.org`. One can use
 `upstream` to point to `anongit.freedesktop.org`. The following
 documentation assumes this convention.
 
 The following bits in `~/.gitconfig` will make it possible to fetch
-updates using the `git` protocol (anonymously), and to push updates
+updates using `https` (anonymously), and to push updates
 through `ssh` without having to fiddle with the remote’s URL (in other
-words: using `git://git.debian.org` everywhere):
+words: using `https://salsa.debian.org` everywhere):
 
 ----
-[url "ssh://git.debian.org"]
-    pushInsteadOf = "git://git.debian.org"
+[url "ssh://git@salsa.debian.org"]
+    pushInsteadOf = "https://salsa.debian.org"
 ----
 
-To get the repository from `git.debian.org` one can run `debcheckout
+To get the repository from `salsa.debian.org` one can run `debcheckout
 $package` (or `debcheckout $package $package.git`), which will use the
 `Vcs-Git` fields in the APT cache to pick the appropriate git
 location. To add the `upstream` remote (using the info stored in
 `debian/watch`), one can use `xsf-remote-add-upstream` script from the
-http://git.debian.org/?p=pkg-xorg/debian/xsf-tools.git[pkg-xorg/debian/xsf-tools.git]
+https://salsa.debian.org/xorg-team/debian/xsf-tools[xsf-tools]
 repository.
 
 **TODO:** There will be more information about how to deal with the
