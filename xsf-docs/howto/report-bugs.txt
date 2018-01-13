@@ -9,7 +9,7 @@ Report it upstream
 In most cases, it is preferrable to report the bug upstream at
 https://bugs.freedesktop.org/enter_bug.cgi?product=xorg
 
-See https://01.org/linuxgraphics/documentation/how-report-bugs-0 for a good
+See https://01.org/linuxgraphics/documentation/how-report-bugs for a good
 introduction on how to write useful bug reports. While the document is targeted
 at Intel graphics hardware, it is a good guideline for other vendor’s hardware
 as well.

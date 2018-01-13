@@ -9,7 +9,7 @@ Packaging bugs or upstream bugs?
 
 It’d be nice to get all upstream bugs tagged as such (`upstream` tag),
 forwarded upstream (which means the bugzilla instance on
-http://bugs.freedesktop.org/ for most packages), and marked as such.
+https://bugs.freedesktop.org/ for most packages), and marked as such.
 
 A mail to `control@bugs.debian.org` would look like:
 
@@ -19,7 +19,7 @@ forwarded X https://bugs.freedesktop.org/show_bug.cgi?id=Y
 thanks
 ----
 
-Then http://bts-link.alioth.debian.org/[`bts-link`] comes into play
+Then https://bts-link.alioth.debian.org/[`bts-link`] comes into play
 and helps us tracking upstream status, which is pretty nice to have.
 
 
@@ -33,7 +33,7 @@ that’s `debian-x@lists.debian.org`.
 
 The list of all usertagged bugs can be seen on the following page; the
 list of all used usertags is at the bottom, in the form. +
-→ http://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-x%40lists.debian.org
+→ https://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-x%40lists.debian.org
 
 Let’s give some examples:
 
@@ -50,8 +50,8 @@ Let’s give some examples:
    (_e.g._ security bugs).
 
 Here’s an example of URL, for the last tags: +
-→ http://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-x%40lists.debian.org&tag=squeeze-candidate +
-→ http://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-x%40lists.debian.org&tag=needs-forwarding
+→ https://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-x%40lists.debian.org&tag=squeeze-candidate +
+→ https://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-x%40lists.debian.org&tag=needs-forwarding
 
 By the way one should keep an eye on the list of found/fixed
 versions since those bugs are likely marked as resolved (in `unstable`
@@ -59,7 +59,7 @@ or `experimental`), but might still affect a stable release.
 
 To list the bugs marked `squeeze-candidate` but not
 `squeeze-accepted`: +
-→ http://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-x%40lists.debian.org&tag=squeeze-candidate&exclude=tag:squeeze-accepted
+→ https://bugs.debian.org/cgi-bin/pkgreport.cgi?users=debian-x%40lists.debian.org&tag=squeeze-candidate&exclude=tag:squeeze-accepted
 
 
 <<<
@@ -72,11 +72,11 @@ based on usertags as well, but one has to use the package address
 than team-specific.
 
 Categories are
-http://wiki.debian.org/bugs.debian.org/usertags[documented on the wiki],
+https://wiki.debian.org/bugs.debian.org/usertags[documented on the wiki],
 and they would probably be welcome in the `intel` and `ati` cases
 above, as well as in the “multiple tools in a single bundle”
 cases… An example of what we could achieve is the
-http://bugs.debian.org/devscripts[devscripts bug page] (it takes
+https://bugs.debian.org/devscripts[devscripts bug page] (it takes
 some time to load, plenty of bugs).
 
 Needed steps for that to happen:
