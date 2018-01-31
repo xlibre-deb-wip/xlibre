@@ -1,9 +1,22 @@
-xorg (1:7.7+19ubuntu3) bionic; urgency=medium
+xorg (1:7.7+19ubuntu5) UNRELEASED; urgency=medium
 
   * control: Add python3-apport to xserver-xorg depends due to the apport hook.
     (LP: #1730035)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Sat, 04 Nov 2017 08:51:54 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Sat, 04 Nov 2017 07:56:48 +0200
+
+xorg (1:7.7+19ubuntu4) bionic; urgency=medium
+
+  * Recommend gnome-terminal before xterm to try to help germinate
+    pick the correct alternate dependency (LP: #1720482)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 30 Jan 2018 20:43:33 -0500
+
+xorg (1:7.7+19ubuntu3) artful; urgency=medium
+
+  * Add alternate dependency on gnome-terminal (LP: #1720482)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 12 Oct 2017 10:25:30 -0400
 
 xorg (1:7.7+19ubuntu2) artful; urgency=medium
 
