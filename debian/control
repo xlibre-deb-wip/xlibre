@@ -108,7 +108,7 @@ Depends:
  xfonts-utils,
  xkb-data,
  xorg-docs-core,
- xterm | x-terminal-emulator,
+ gnome-terminal | xterm | x-terminal-emulator,
  ${misc:Depends},
  xinput,
 Recommends:
