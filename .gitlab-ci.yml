@@ -2,7 +2,7 @@ image: debian:9
 
 pages:
   script:
-  - apt-get update -qq && apt-get install -qq asciidoc
+  - apt-get update -qq && apt-get install -qq make asciidoc
   - cp -a xsf-docs public
   - make -C public
   artifacts:
