@@ -45,7 +45,7 @@ Feedback
 --------
 
  * Sources for these documents are available on
-   https://salsa.debian.org/xorg-team/debian/xorg/tree/xsf-docs[salsa.debian.org].
+   https://salsa.debian.org/xorg-team/xorg/tree/xsf-docs[salsa.debian.org].
 
  * Patches, suggestions, flames, etc. are welcome, using the
    https://lists.debian.org/debian-x/[debian-x] mailing list.
