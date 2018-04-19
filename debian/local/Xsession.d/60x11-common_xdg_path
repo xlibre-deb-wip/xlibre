@@ -6,9 +6,9 @@ DEFAULT_XDG_DATA_DIRS='/usr/local/share/:/usr/share/'
 if [ -n "$DESKTOP_SESSION" ]; then
   # readd default if was empty
   if [ -z "$XDG_CONFIG_DIRS" ]; then
-    XDG_CONFIG_DIRS="$DEFAULT_XDG_CONFIG_DIRS"/xdg-"$DESKTOP_SESSION":"$DEFAULT_XDG_CONFIG_DIRS";;
-  else
-    XDG_CONFIG_DIRS="$DEFAULT_XDG_CONFIG_DIRS"/xdg-"$DESKTOP_SESSION":"$DEFAULT_XDG_CONFIG_DIRS":"$XDG_CONFIG_DIRS";;
+    XDG_CONFIG_DIRS="$DEFAULT_XDG_CONFIG_DIRS"/xdg-"$DESKTOP_SESSION":"$DEFAULT_XDG_CONFIG_DIRS"
+  elif [ -n "${XDG_CONFIG_DIRS##*$DEFAULT_XDG_CONFIG_DIRS/xdg-$DESKTOP_SESSION*}" ]; then
+    XDG_CONFIG_DIRS="$DEFAULT_XDG_CONFIG_DIRS"/xdg-"$DESKTOP_SESSION":"$XDG_CONFIG_DIRS"
   fi
   export XDG_CONFIG_DIRS
   # gnome is already added if gnome-session installed
