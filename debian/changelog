@@ -1,4 +1,4 @@
-xorg (1:7.7+19ubuntu8) UNRELEASED; urgency=medium
+xorg (1:7.7+19ubuntu8) cosmic; urgency=medium
 
   * x11-common.preinst:
     - Rename nux config leftovers which might change the environment
@@ -8,7 +8,7 @@ xorg (1:7.7+19ubuntu8) UNRELEASED; urgency=medium
       version contains the fixed conffile; if it's installed on the system we
       need people to be upgraded to the new version.
 
- -- Marco Trevisan (Treviño) <marco@ubuntu.com>  Thu, 21 Jun 2018 11:28:54 +0100
+ -- Marco Trevisan (Treviño) <marco@ubuntu.com>  Thu, 21 Jun 2018 11:37:03 +0100
 
 xorg (1:7.7+19ubuntu7) bionic; urgency=medium
 
