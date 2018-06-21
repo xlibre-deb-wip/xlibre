@@ -1,3 +1,15 @@
+xorg (1:7.7+19ubuntu8) UNRELEASED; urgency=medium
+
+  * x11-common.preinst:
+    - Rename nux config leftovers which might change the environment
+      even when not running an unity session (LP: #1768610)
+  * debian/control:
+    - x11-common breaks nux-tools (<< 4.0.8+18.04.20180613.5-0ubuntu1) - this
+      version contains the fixed conffile; if it's installed on the system we
+      need people to be upgraded to the new version.
+
+ -- Marco Trevisan (Treviño) <marco@ubuntu.com>  Thu, 21 Jun 2018 11:28:54 +0100
+
 xorg (1:7.7+19ubuntu7) bionic; urgency=medium
 
   [ Simon Quigley ]
