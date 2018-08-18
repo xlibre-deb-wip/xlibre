@@ -1,6 +1,11 @@
 xorg (1:7.7+20) UNRELEASED; urgency=medium
 
+  [ Julien Cristau ]
   * Update docs for alioth→salsa move.
+
+  [ Sven Joachim ]
+  * Let xorg-dev depend on x11proto-dev rather than on the transional
+    x11-proto-*-dev packages (Closes: #906537).
 
  -- Julien Cristau <jcristau@debian.org>  Sat, 13 Jan 2018 15:34:33 +0100
 
