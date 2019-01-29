@@ -60,6 +60,18 @@ USERXSESSIONRC=$HOME/.xsessionrc
 ALTUSERXSESSION=$HOME/.Xsession
 ERRFILE=$HOME/.xsession-errors
 
+# read OPTIONFILE
+OPTIONS=$(cat "$OPTIONFILE") || true
+
+has_option() {
+  if [ "${OPTIONS#*
+$1}" != "$OPTIONS" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
 # attempt to create an error file; abort if we cannot
 if (umask 077 && touch "$ERRFILE") 2> /dev/null && [ -w "$ERRFILE" ] &&
   [ ! -L "$ERRFILE" ]; then
