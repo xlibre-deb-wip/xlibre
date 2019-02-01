@@ -1,3 +1,9 @@
+xorg (1:7.7+19ubuntu9) UNRELEASED; urgency=medium
+
+  * control: Move xserver-xorg-video-intel to Suggests of -video-all.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 01 Feb 2019 23:50:30 +0200
+
 xorg (1:7.7+19ubuntu8) cosmic; urgency=medium
 
   * x11-common.preinst:
