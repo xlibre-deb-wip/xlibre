@@ -1,9 +1,9 @@
-xorg (1:7.7+19ubuntu10) UNRELEASED; urgency=medium
+xorg (1:7.7+19ubuntu10) disco; urgency=medium
 
   * control: Add mesa-vulkan-drivers to xserver-xorg Recommends. (LP:
     #1742714)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Tue, 12 Mar 2019 15:00:43 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 13 Mar 2019 13:54:57 +0200
 
 xorg (1:7.7+19ubuntu9) disco; urgency=medium
 
