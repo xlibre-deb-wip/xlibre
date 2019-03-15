@@ -44,7 +44,6 @@ Depends:
  python3-apport,
 Recommends:
  libgl1-mesa-dri,
- mesa-vulkan-drivers,
  xserver-xorg-legacy [linux-any],
  xserver-xorg-video-all,
 Breaks: xdiagnose (<< 3.8.8)
