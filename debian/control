@@ -66,9 +66,9 @@ Depends:
  ${misc:Depends},
 Recommends:
  xserver-xorg-video-qxl [amd64 i386 x32],
+ xserver-xorg-video-intel [amd64 i386 kfreebsd-any x32],
 Suggests:
  xserver-xorg-video-geode [i386],
- xserver-xorg-video-intel [amd64 i386 kfreebsd-any x32],
 Replaces: xserver-xorg-driver-all
 Conflicts: xserver-xorg-driver-all
 Description: X.Org X server -- output driver metapackage
