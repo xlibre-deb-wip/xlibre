@@ -1,10 +1,10 @@
-xorg (1:7.7+19ubuntu12) UNRELEASED; urgency=medium
+xorg (1:7.7+19ubuntu12) disco; urgency=medium
 
   * control: Restore -intel to x-x-video-all Recommends, glamor needs
     OpenGL 2.1 which i915_dri.so doesn't support. (LP: #1819943)
   * control: Add mesa-vulkan-drivers back to xserver-xorg recommends.
 
- -- Timo Aaltonen <tjaalton@debian.org>  Sun, 17 Mar 2019 23:42:41 +0200
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 26 Mar 2019 17:46:22 +0200
 
 xorg (1:7.7+19ubuntu11) disco; urgency=medium
 
