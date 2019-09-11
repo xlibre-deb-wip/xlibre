@@ -7,6 +7,9 @@ xorg (1:7.7+20) UNRELEASED; urgency=medium
   * Let xorg-dev depend on x11proto-dev rather than on the transional
     x11-proto-*-dev packages (Closes: #906537).
 
+  [ Timo Aaltonen ]
+  * x11-common.dirs: Add etc/X11/xorg.conf.d for config snippets.
+
  -- Julien Cristau <jcristau@debian.org>  Sat, 13 Jan 2018 15:34:33 +0100
 
 xorg (1:7.7+19) unstable; urgency=high
