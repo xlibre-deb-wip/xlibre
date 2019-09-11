@@ -10,6 +10,11 @@ xorg (1:7.7+20) UNRELEASED; urgency=medium
   [ Timo Aaltonen ]
   * x11-common.dirs: Add etc/X11/xorg.conf.d for config snippets.
 
+  [ Iain Lane ]
+  * 20x11-common_process-args: Find the first word of our startup program for
+    $STARTUP. It's valid for this to be a full invocation, with arguments, but
+    for our purposes we only care what the executable was.
+
  -- Julien Cristau <jcristau@debian.org>  Sat, 13 Jan 2018 15:34:33 +0100
 
 xorg (1:7.7+19) unstable; urgency=high
