@@ -1,4 +1,4 @@
-xorg (1:7.7+20) UNRELEASED; urgency=medium
+xorg (1:7.7+20) unstable; urgency=medium
 
   [ Julien Cristau ]
   * Update docs for alioth→salsa move.
@@ -13,9 +13,9 @@ xorg (1:7.7+20) UNRELEASED; urgency=medium
   [ Iain Lane ]
   * 20x11-common_process-args: Find the first word of our startup program for
     $STARTUP. It's valid for this to be a full invocation, with arguments, but
-    for our purposes we only care what the executable was.
+    for our purposes we only care what the executable was. (Closes: #694832)
 
- -- Julien Cristau <jcristau@debian.org>  Sat, 13 Jan 2018 15:34:33 +0100
+ -- Timo Aaltonen <tjaalton@debian.org>  Sun, 27 Oct 2019 11:03:47 +0200
 
 xorg (1:7.7+19) unstable; urgency=high
 
