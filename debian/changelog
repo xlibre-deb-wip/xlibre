@@ -1,3 +1,9 @@
+xorg (1:7.7+22) UNRELEASED; urgency=medium
+
+  * Merge from Debian.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 09 Oct 2020 11:55:37 +0300
+
 xorg (1:7.7+21) unstable; urgency=medium
 
   [ Josh Triplett ]
