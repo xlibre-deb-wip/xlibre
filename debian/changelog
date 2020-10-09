@@ -9,6 +9,9 @@ xorg (1:7.7+21) UNRELEASED; urgency=medium
   * x11-common: Stop passing unsupported parameters to update-rc.d
     (Closes: #785076)
 
+  [ Timo Aaltonen ]
+  * control: Use debhelper-compat, bump to 12.
+
  -- Josh Triplett <josh@joshtriplett.org>  Fri, 29 Nov 2019 12:34:43 -0800
 
 xorg (1:7.7+20) unstable; urgency=medium
