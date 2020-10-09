@@ -1,3 +1,39 @@
+xorg (1:7.7+21) unstable; urgency=medium
+
+  [ Josh Triplett ]
+  * Support /etc/X11/Xsession.options.d/*.conf in addition to
+    Xsession.options, allowing sysadmins to drop configuration snippets there
+    rather than editing /etc/X11/Xsession.options.
+
+  [ Ben Hutchings ]
+  * x11-common: Stop passing unsupported parameters to update-rc.d
+    (Closes: #785076)
+
+  [ Timo Aaltonen ]
+  * control: Use debhelper-compat, bump to 12.
+  * control: Bump policy to 4.5.0.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 09 Oct 2020 11:21:52 +0300
+
+xorg (1:7.7+20) unstable; urgency=medium
+
+  [ Julien Cristau ]
+  * Update docs for alioth→salsa move.
+
+  [ Sven Joachim ]
+  * Let xorg-dev depend on x11proto-dev rather than on the transional
+    x11-proto-*-dev packages (Closes: #906537).
+
+  [ Timo Aaltonen ]
+  * x11-common.dirs: Add etc/X11/xorg.conf.d for config snippets.
+
+  [ Iain Lane ]
+  * 20x11-common_process-args: Find the first word of our startup program for
+    $STARTUP. It's valid for this to be a full invocation, with arguments, but
+    for our purposes we only care what the executable was. (Closes: #694832)
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Sun, 27 Oct 2019 11:03:47 +0200
+
 xorg (1:7.7+19ubuntu15) groovy; urgency=medium
 
   * debian/local/Xsession.d/60x11-common_localhost: Dropped, it's

@@ -11,7 +11,7 @@ Multitouch/touchpads
 --------------------
 
 Touchpad features, by Peter Hutterer: +
-→ http://who-t.blogspot.com/2010/06/incomplete-roundup-of-touchpad-features.html
+→ https://who-t.blogspot.com/2010/06/incomplete-roundup-of-touchpad-features.html
 
 What multitouch really is about, by Peter Hutterer: +
-→ http://who-t.blogspot.com/2010/10/thoughts-on-linux-multitouch.html
+→ https://who-t.blogspot.com/2010/10/thoughts-on-linux-multitouch.html

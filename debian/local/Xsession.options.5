@@ -18,11 +18,11 @@
 .\" Suite 330, Boston, MA 02111-1307 USA
 .TH Xsession.options 5 "2004\-10\-31" "Debian Project"
 .SH NAME
-Xsession.options \- configuration options for
+Xsession.options, Xsession.options.d \- configuration options for
 .BR Xsession (5)
 .SH DESCRIPTION
-.I /etc/X11/Xsession.options
-contains a set of flags that determine some of the behavior of the
+\fI/etc/X11/Xsession.options\fR and \fI/etc/X11/Xsession.options.d/*.conf\fR
+contain options that determine some of the behavior of the
 .BR Xsession (5)
 Bourne shell
 .RB ( sh (1))
@@ -31,13 +31,18 @@ See the
 .BR Xsession (5)
 manpage for further information.
 .PP
-.I Xsession.options
+These configuration files
 may contain comments, which begin with a hash mark (\(oq#\(cq) and end at
 the next newline, just like comments in shell scripts.
 The rest of the file consists of options which are expressed as words
 separated by hyphens, with only one option per line.
 Options are enabled by simply placing them in the file; they are disabled
 by prefixing the option name with \(oqno\-\(cq.
+.PP
+Options are read from \fI/etc/X11/Xsession.options\fR, followed by
+\fI/etc/X11/Xsession.options.d/*.conf\fR in sorted order; later occurrences of
+an option (with or without the \(oqno\-\(cq prefix) take precedence over earlier
+occurrences.
 .PP
 Available options are:
 .TP

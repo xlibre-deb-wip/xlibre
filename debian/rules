@@ -20,7 +20,7 @@ override_dh_install:
 	dh_install
 
 override_dh_installinit-indep:
-	dh_installinit -px11-common -u'start 70 S .'
+	dh_installinit -px11-common
 
 override_dh_fixperms-indep:
 	dh_fixperms

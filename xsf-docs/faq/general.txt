@@ -40,7 +40,7 @@ Ati driver
 
  * _Why is it I’m getting low performances, or even crashes?_ +
    Make sure you have installed the
-   link:http://packages.debian.org/firmware-linux&exact=1[`firmware-linux`
+   link:https://packages.debian.org/firmware-linux&exact=1[`firmware-linux`
    package].  The driver might still be working without the firmware,
    but using code paths which aren’t supported as well as the “normal”
    ones.
@@ -51,7 +51,7 @@ Intel driver
  * _Why isn’t it working?_ +
    KMS is mandatory, as documented in its `README.Debian` (view it
    online:
-   http://git.debian.org/?p=pkg-xorg/driver/xserver-xorg-video-intel.git;a=blob;f=debian/README.Debian[git.debian.org]). You
+   https://salsa.debian.org/xorg-team/driver/xserver-xorg-video-intel/blob/debian-unstable/debian/README.Debian?viewer=simple[salsa.debian.org]). You
    probably disabled KMS or didn’t include it in your kernel
    configuration if you’re using a custom kernel.
 
@@ -59,7 +59,7 @@ Intel driver
    Unfortunately, old cards are not very well supported, and you can’t
    do much more than switching to a generic driver, like `fbdev` or
    `vesa`, as documented in `README.Debian` (view it online:
-   http://git.debian.org/?p=pkg-xorg/driver/xserver-xorg-video-intel.git;a=blob;f=debian/README.Debian[git.debian.org]). Please
+   https://salsa.debian.org/xorg-team/driver/xserver-xorg-video-intel/blob/debian-unstable/debian/README.Debian?viewer=simple[salsa.debian.org]). Please
    note that you need to disable `KMS` if you want to use the `vesa`
    driver. A minimal `xorg.conf` would look like:
 ----
@@ -77,8 +77,7 @@ Nouveau driver
    interfaces aren’t stable yet, so the driver has particular
    dependencies on the kernel, which are documented in `README.Debian`
    (view it online:
-   http://git.debian.org/?p=pkg-xorg/driver/xserver-xorg-video-nouveau.git;a=blob;f=debian/README.Debian;h=27ced6b1bf5102a5b72525318439efdfb330745d;hb=6c2f12ca18f55b55d49e083d86d87d970ce53a07[for squeeze],
-   http://git.debian.org/?p=pkg-xorg/driver/xserver-xorg-video-nouveau.git;a=blob;f=debian/README.Debian[for sid]).
+   https://salsa.debian.org/xorg-team/driver/xserver-xorg-video-nouveau/blob/debian-unstable/debian/README.Debian?viewer=simple[salsa.debian.org]).
 
 
 <<<

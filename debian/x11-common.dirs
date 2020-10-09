@@ -1,3 +1,4 @@
+etc/X11/xorg.conf.d
 etc/X11/Xresources
 etc/X11/Xreset.d
 etc/X11/Xsession.d
