@@ -1,9 +1,9 @@
-xorg (1:7.7+19ubuntu15) UNRELEASED; urgency=medium
+xorg (1:7.7+19ubuntu15) groovy; urgency=medium
 
   * debian/local/Xsession.d/60x11-common_localhost: Dropped, it's
     provided by 35x11-common_xhost-local now. (LP: #1576454)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Fri, 09 Oct 2020 11:15:24 +0300
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 09 Oct 2020 11:17:12 +0300
 
 xorg (1:7.7+19ubuntu14) focal; urgency=medium
 
