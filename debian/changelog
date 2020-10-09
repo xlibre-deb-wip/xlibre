@@ -1,4 +1,4 @@
-xorg (1:7.7+21) UNRELEASED; urgency=medium
+xorg (1:7.7+21) unstable; urgency=medium
 
   [ Josh Triplett ]
   * Support /etc/X11/Xsession.options.d/*.conf in addition to
@@ -13,7 +13,7 @@ xorg (1:7.7+21) UNRELEASED; urgency=medium
   * control: Use debhelper-compat, bump to 12.
   * control: Bump policy to 4.5.0.
 
- -- Josh Triplett <josh@joshtriplett.org>  Fri, 29 Nov 2019 12:34:43 -0800
+ -- Timo Aaltonen <tjaalton@debian.org>  Fri, 09 Oct 2020 11:21:52 +0300
 
 xorg (1:7.7+20) unstable; urgency=medium
 
