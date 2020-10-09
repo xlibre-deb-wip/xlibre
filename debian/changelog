@@ -1,3 +1,16 @@
+xorg (1:7.7+19ubuntu14) focal; urgency=medium
+
+  * No-change rebuild with fixed binutils on arm64.
+
+ -- Matthias Klose <doko@ubuntu.com>  Sat, 08 Feb 2020 11:21:28 +0000
+
+xorg (1:7.7+19ubuntu13) focal; urgency=medium
+
+  * Omit xorg, xserver-xorg, xserver-xorg-{input,video}-all binaries on
+    i386.
+
+ -- Steve Langasek <steve.langasek@ubuntu.com>  Thu, 09 Jan 2020 17:38:55 -0800
+
 xorg (1:7.7+19ubuntu12) disco; urgency=medium
 
   * control: Restore -intel to x-x-video-all Recommends, glamor needs
