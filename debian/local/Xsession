@@ -65,7 +65,7 @@ OPTIONS="$(
     cat "$OPTIONFILE"
   fi
   if [ -d /etc/X11/Xsession.options.d ]; then
-    run-parts --list --regex '\.conf$' /etc/X11/Xsession.options.d
+    run-parts --list --regex '\.conf$' /etc/X11/Xsession.options.d | xargs -d '\n' cat
   fi
 )"
 
