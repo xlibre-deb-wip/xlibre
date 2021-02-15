@@ -1,3 +1,10 @@
+xorg (1:7.7+22) unstable; urgency=medium
+
+  [ Josh Triplett ]
+  * Fix support for /etc/X11/Xsession.options.d directory
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Mon, 15 Feb 2021 11:58:45 +0200
+
 xorg (1:7.7+21) unstable; urgency=medium
 
   [ Josh Triplett ]
