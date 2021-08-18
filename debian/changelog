@@ -1,6 +1,8 @@
 xorg (1:7.7+23) UNRELEASED; urgency=medium
 
   * Xsession: Use mktemp instead of tempfile. (Closes: #992385)
+  * control: Drop dependency on dummy package libgl1-mesa-glx. (Closes:
+    #930609)
 
  -- Timo Aaltonen <tjaalton@debian.org>  Wed, 18 Aug 2021 10:18:07 +0300
 
