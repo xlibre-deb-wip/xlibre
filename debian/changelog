@@ -1,11 +1,15 @@
-xorg (1:7.7+23) UNRELEASED; urgency=medium
+xorg (1:7.7+23) unstable; urgency=medium
 
+  [ Timo Aaltonen ]
   * Xsession: Use mktemp instead of tempfile. (Closes: #992385)
   * control: Drop dependency on dummy package libgl1-mesa-glx. (Closes:
     #930609)
   * 90x11-common_ssh-agent: Clean up. (Closes: #861071)
 
- -- Timo Aaltonen <tjaalton@debian.org>  Wed, 18 Aug 2021 10:18:07 +0300
+  [ Jochen Sprickerhof ]
+  * Replace 'which' by 'command -v'.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Wed, 18 Aug 2021 14:00:51 +0300
 
 xorg (1:7.7+22) unstable; urgency=medium
 
