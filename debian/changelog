@@ -1,3 +1,9 @@
+xorg (1:7.7+22ubuntu2) impish; urgency=medium
+
+  * No-change rebuild to build packages with zstd compression.
+
+ -- Matthias Klose <doko@ubuntu.com>  Thu, 07 Oct 2021 12:27:07 +0200
+
 xorg (1:7.7+22ubuntu1) hirsute; urgency=medium
 
   * Merge from Debian.
