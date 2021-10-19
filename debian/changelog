@@ -1,3 +1,9 @@
+xorg (1:7.7+23ubuntu1) jammy; urgency=medium
+
+  * Merge from Debian.
+
+ -- Timo Aaltonen <tjaalton@debian.org>  Tue, 19 Oct 2021 12:32:30 +0300
+
 xorg (1:7.7+23) unstable; urgency=medium
 
   [ Timo Aaltonen ]
