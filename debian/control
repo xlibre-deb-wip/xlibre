@@ -91,7 +91,7 @@ Package: xorg
 Architecture: any
 Depends:
  xserver-xorg (>= ${binary:Version}),
- libgl1-mesa-glx | libgl1 [!armhf],
+ libgl1 [!armhf],
  libgl1-mesa-dri [!armhf],
  libglu1-mesa [!armhf],
  xfonts-base (>= 1:1.0.0-1),
