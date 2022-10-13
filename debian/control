@@ -4,7 +4,6 @@ Priority: optional
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Standards-Version: 4.5.0
 Build-Depends:
- dpkg (>= 1.16.1),
  debhelper-compat (= 12),
  po-debconf,
 # xsf-docs:
@@ -16,7 +15,7 @@ Homepage: https://www.x.org/
 Package: x11-common
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, lsb-base (>= 1.3-9ubuntu2)
+Depends: ${misc:Depends}, lsb-base
 Description: X Window System (X.Org) infrastructure
  x11-common contains the filesystem infrastructure required for further
  installation of the X Window System in any configuration; it does not
@@ -32,13 +31,13 @@ Description: X Window System (X.Org) infrastructure
 Package: xserver-xorg
 Architecture: any
 Depends:
- xserver-xorg-core (>= 2:1.17.2-2),
+ xserver-xorg-core,
  xserver-xorg-legacy [!linux-any],
  xserver-xorg-video-all | xorg-driver-video,
  xserver-xorg-input-all | xorg-driver-input,
  ${shlibs:Depends},
  ${misc:Depends},
- xkb-data (>= 1.4),
+ xkb-data,
  x11-xkb-utils
 Recommends:
  libgl1-mesa-dri,
@@ -91,10 +90,10 @@ Depends:
  libgl1,
  libgl1-mesa-dri,
  libglu1-mesa,
- xfonts-base (>= 1:1.0.0-1),
- xfonts-100dpi (>= 1:1.0.0-1),
- xfonts-75dpi (>= 1:1.0.0-1),
- xfonts-scalable (>= 1:1.0.0-1),
+ xfonts-base,
+ xfonts-100dpi,
+ xfonts-75dpi,
+ xfonts-scalable,
  x11-apps,
  x11-session-utils,
  x11-utils,

@@ -1,3 +1,15 @@
+xorg (1:7.7+24) UNRELEASED; urgency=medium
+
+  * Remove constraints unnecessary since buster (oldstable):
+    + Build-Depends: Drop versioned constraint on dpkg.
+    + x11-common: Drop versioned constraint on lsb-base in Depends.
+    + xserver-xorg: Drop versioned constraint on xkb-data and xserver-xorg-core
+      in Depends.
+    + xorg: Drop versioned constraint on xfonts-100dpi, xfonts-75dpi,
+      xfonts-base and xfonts-scalable in Depends.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
+
 xorg (1:7.7+23) unstable; urgency=medium
 
   [ Timo Aaltonen ]
