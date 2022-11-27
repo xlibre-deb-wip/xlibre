@@ -13,6 +13,8 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
   * Update renamed lintian tag names in lintian overrides.
   * Use canonical URL in Vcs-Git.
   * Update standards version to 4.6.1, no changes needed.
+  * Remove field Section on binary packages xbase-clients, xutils that
+    duplicates source.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 

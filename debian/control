@@ -172,7 +172,6 @@ Description: X.Org X Window System development libraries
  Debian developers to have their package depend on.
 
 Package: xbase-clients
-Section: x11
 Architecture: all
 Depends:
  x11-apps,
@@ -198,7 +197,6 @@ Description: miscellaneous X clients - metapackage
  packages.
 
 Package: xutils
-Section: x11
 Architecture: all
 Depends:
  x11-utils,
