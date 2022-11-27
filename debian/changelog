@@ -8,6 +8,7 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
     + xorg: Drop versioned constraint on xfonts-100dpi, xfonts-75dpi,
       xfonts-base and xfonts-scalable in Depends.
   * Trim trailing whitespace.
+  * Upgrade to newer source format 3.0 (native).
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 
