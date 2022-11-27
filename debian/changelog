@@ -12,6 +12,7 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
   * Bump debhelper from old 12 to 13.
   * Update renamed lintian tag names in lintian overrides.
   * Use canonical URL in Vcs-Git.
+  * Update standards version to 4.6.1, no changes needed.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 
