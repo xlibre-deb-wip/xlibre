@@ -7,6 +7,7 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
       in Depends.
     + xorg: Drop versioned constraint on xfonts-100dpi, xfonts-75dpi,
       xfonts-base and xfonts-scalable in Depends.
+  * Trim trailing whitespace.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 
@@ -341,10 +342,10 @@ xorg (1:7.6+12) unstable; urgency=high
 xorg (1:7.6+11) unstable; urgency=low
 
   * Team upload.
-  * debian/local/Xsession.d/35x11-common_xhost-local: add a new script 
-    to the default X session. It will give access to the running X 
-    server to the logged on user. This is useful for gdm3 which does not 
-    give access to $XAUTHORITY outside the session, but can also be of 
+  * debian/local/Xsession.d/35x11-common_xhost-local: add a new script
+    to the default X session. It will give access to the running X
+    server to the logged on user. This is useful for gdm3 which does not
+    give access to $XAUTHORITY outside the session, but can also be of
     use for other display managers. Closes: #586685.
 
  -- Josselin Mouette <joss@debian.org>  Sat, 28 Jan 2012 12:42:38 +0100
@@ -724,7 +725,7 @@ xorg (1:7.4+4) unstable; urgency=low
   * Bump debhelper compat to v7. No changes necessary.
   * Rename stamps to take advantage of dh_clean v7 handling them automatically
   * Bump standards version to 3.8.2. No changes necessary.
-  
+
  -- David Nusinow <dnusinow@debian.org>  Thu, 13 Aug 2009 21:19:12 -0400
 
 xorg (1:7.4+3) unstable; urgency=low
@@ -738,7 +739,7 @@ xorg (1:7.4+3) unstable; urgency=low
 xorg (1:7.4+2) unstable; urgency=low
 
   [ David Nusinow ]
-  * Don't discuss removal of xserver-xorg in its description. 
+  * Don't discuss removal of xserver-xorg in its description.
     It remains tied to -core at this point. (closes: #523630).
   * Add libgl1-mesa-dri to the depends of the xorg package to ensure that
     it gets pulled in even if Recommends are disabled
@@ -843,7 +844,7 @@ xorg (1:7.4+1) unstable; urgency=low
   * Upload to unstable.
 
   [ David Nusinow ]
-  * Add an example xorg.conf to /usr/share/doc/xserver-xorg/examples. 
+  * Add an example xorg.conf to /usr/share/doc/xserver-xorg/examples.
     This will give people something to copy from and modify for their own
     configurations
 
@@ -1245,7 +1246,7 @@ xorg (1:7.3+5) unstable; urgency=low
 xorg (1:7.3+4) unstable; urgency=low
 
   * Don't try and reset monitor identifier question, it doesn't exist now
-  * Don't bother at all with default-x-server question. 
+  * Don't bother at all with default-x-server question.
     Closes: #448863, #374578
     + Remove it from the xserver-xorg postinst. Now instead of a complicated
       md5sum, only create the symlink if nothing exists there.
@@ -1818,7 +1819,7 @@ xorg (1:7.1.0-3) unstable; urgency=low
     - Simplified Chinese. Closes: #390956
 
   [ David Nusinow ]
-  * Make /dev/input/mice the default mouse port in the xserver-xorg.templates 
+  * Make /dev/input/mice the default mouse port in the xserver-xorg.templates
     file.  Also provide the devices in this file rather than as a variable in
     the config script. Closes: #385078
   * Have dexconf actually use the mouse protocol and port selected during
@@ -2180,7 +2181,7 @@ xorg (1:7.0.16) unstable; urgency=low
  -- David Nusinow <dnusinow@debian.org>  Wed,  3 May 2006 00:21:11 -0400
 
 xorg (1:7.0.15) unstable; urgency=low
-  
+
   * The "Happy Birthday Steve!" release
 
   [ Christian Perrier ]
@@ -2508,7 +2509,7 @@ xorg (7.0.0-0ubuntu10) dapper; urgency=low
     xserver-xorg-input-all
   * Add zlib1g-dev to the dependency list of xlibs-dev and remove
     xlibs-static-dev, since the latter no longer exists.
-    
+
  -- Tollef Fog Heen <tfheen@ubuntu.com>  Fri, 20 Jan 2006 11:25:57 +0100
 
 xorg (7.0.0-0ubuntu9) dapper; urgency=low
@@ -2641,4 +2642,3 @@ Old Changelog:
   CAN-2004-0106, CAN-2003-0690, CAN-2003-0730, CAN-2003-0690, CAN-2003-0063,
   CAN-2003-0071, CAN-2004-0093, CAN-2004-0094, CAN-2004-0093, CAN-2004-0094.
   These should all be moved to their respective source packages. -daniels
-
