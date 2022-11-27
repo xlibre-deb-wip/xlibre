@@ -10,6 +10,7 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
   * Trim trailing whitespace.
   * Upgrade to newer source format 3.0 (native).
   * Bump debhelper from old 12 to 13.
+  * Update renamed lintian tag names in lintian overrides.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 
