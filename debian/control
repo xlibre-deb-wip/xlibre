@@ -124,7 +124,6 @@ Description: X.Org X Window System
 Package: xorg-dev
 Architecture: all
 Depends:
- libdmx-dev,
  libfontenc-dev,
  libfs-dev,
  libice-dev,
