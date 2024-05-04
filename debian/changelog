@@ -18,7 +18,7 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
     duplicates source.
 
   [ Timo Aaltonen ]
-  * control: Drop libdmx-dev from xorg-dev depends.
+  * control: Drop libdmx-dev from xorg-dev depends. (Closes: #1035474)
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 
