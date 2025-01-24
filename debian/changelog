@@ -17,6 +17,9 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
   * Remove field Section on binary packages xbase-clients, xutils that
     duplicates source.
 
+  [ Emilio Pozuelo Monfort ]
+  * Only depend on the vesa driver on x86 platforms.
+
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 
 xorg (1:7.7+23.2) unstable; urgency=medium
