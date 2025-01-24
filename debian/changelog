@@ -19,6 +19,13 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 
+xorg (1:7.7+23.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Make xorg build without root.  (Closes: #1089479)
+
+ -- Niels Thykier <niels@thykier.net>  Sat, 28 Dec 2024 15:03:28 +0000
+
 xorg (1:7.7+23.1) unstable; urgency=medium
 
   * Non-maintainer upload.
