@@ -17,10 +17,14 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
   * Remove field Section on binary packages xbase-clients, xutils that
     duplicates source.
 
-  [ Timo Aaltonen ]
-  * control: Drop libdmx-dev from xorg-dev depends. (Closes: #1035474)
-
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
+
+xorg (1:7.7+23.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop libdmx-dev from xorg-dev meta-package. (Closes: #1070350)
+
+ -- Chris Hofstaedtler <zeha@debian.org>  Mon, 08 Jul 2024 14:45:55 +0200
 
 xorg (1:7.7+23) unstable; urgency=medium
 
