@@ -1,4 +1,4 @@
-xorg (1:7.7+24) UNRELEASED; urgency=medium
+xorg (1:7.7+24) unstable; urgency=medium
 
   [ Debian Janitor ]
   * Remove constraints unnecessary since buster (oldstable):
@@ -21,7 +21,7 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
   * Only depend on the vesa driver on x86 platforms.
   * rules: drop duplicate call to dh_fixperms.
 
- -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Fri, 24 Jan 2025 10:02:23 +0100
 
 xorg (1:7.7+23.2) unstable; urgency=medium
 
