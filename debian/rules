@@ -16,7 +16,6 @@ override_dh_installinit-indep:
 	dh_installinit -px11-common
 
 execute_after_dh_fixperms-indep:
-	dh_fixperms
 	chmod 755 debian/x11-common/etc/X11/Xreset
 	chmod 755 debian/x11-common/etc/X11/Xsession
 

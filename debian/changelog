@@ -19,6 +19,7 @@ xorg (1:7.7+24) UNRELEASED; urgency=medium
 
   [ Emilio Pozuelo Monfort ]
   * Only depend on the vesa driver on x86 platforms.
+  * rules: drop duplicate call to dh_fixperms.
 
  -- Debian Janitor <janitor@jelmer.uk>  Thu, 13 Oct 2022 08:40:16 -0000
 
