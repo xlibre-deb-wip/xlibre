@@ -33,7 +33,7 @@ case $# in
         ;;
       *)
         # Specific program was requested.
-        if command -v "$1" >/dev/null; then
+        if command -v "${1%% *}" >/dev/null; then
           STARTUP="$1"
         else
           message "unable to launch \"$1\" X session ---" \
