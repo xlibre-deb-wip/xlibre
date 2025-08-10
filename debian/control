@@ -29,9 +29,9 @@ Recommends:
 Provides:
  xserver-xorg,
  xserver
-Description: X.Org X server
+Description: XLibre X server
  This package depends on the full suite of the server and drivers for the
- X.Org X server.  It does not provide the actual server itself.
+ XLibre X server.  It does not provide the actual server itself.
 Conflicts:
  xserver-xorg,
 
@@ -53,9 +53,9 @@ Replaces: xserver-xorg-driver-all
 Conflicts:
  xserver-xorg-video-all,
  xserver-xlibre-driver-all
-Description: X.Org X server -- output driver metapackage
- This package depends on the full suite of output drivers for the X.Org X server
- (Xorg).  It does not provide any drivers itself, and may be removed if you wish
+Description: XLibre X server -- output driver metapackage
+ This package depends on the full suite of output drivers for the XLibre X server
+ (XLibre).  It does not provide any drivers itself, and may be removed if you wish
  to only have certain drivers installed.
 Provides:
  xserver-xorg-video-all,
@@ -70,9 +70,9 @@ Depends:
  ${misc:Depends},
 Recommends:
  xserver-xlibre-input-wacom [!hurd-any !kfreebsd-any !s390x],
-Description: X.Org X server -- input driver metapackage
- This package depends on the full suite of input drivers for the X.Org X server
- (Xorg).  It does not provide any drivers itself, and may be removed if you wish
+Description: XLibre X server -- input driver metapackage
+ This package depends on the full suite of input drivers for the XLibre X server
+ (XLibre).  It does not provide any drivers itself, and may be removed if you wish
  to only have certain drivers installed.
 Provides:
  xserver-xorg-input-all,
@@ -108,7 +108,7 @@ Provides:
 Suggests:
  xorg-docs,
  x11-xfs-utils,
-Description: X.Org X Window System
+Description: XLibre X Window System
  This metapackage provides the components for a standalone
  workstation running the X Window System.  It provides the X libraries, an X
  server, a set of fonts, and a group of basic X clients and utilities.
@@ -159,8 +159,8 @@ Depends:
  xserver-xlibre-dev,
  xtrans-dev,
  ${misc:Depends},
-Description: X.Org X Window System development libraries
- This metapackage provides the development libraries for the X.Org X Window
+Description: XLibre X Window System development libraries
+ This metapackage provides the development libraries for the XLibre X Window
  System.
  .
  X Window System design documentation, manual pages, library reference
