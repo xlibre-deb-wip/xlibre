@@ -1,77 +1,88 @@
-Source: xorg
+Source: xlibre
 Section: x11
 Priority: optional
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Maintainer: apebl <a@pebl.cc>
 Rules-Requires-Root: no
 Standards-Version: 4.6.1
 Build-Depends:
  debhelper-compat (= 13),
  po-debconf,
-# xsf-docs:
  asciidoc,
-Vcs-Git: https://salsa.debian.org/xorg-team/debian/xorg.git
-Vcs-Browser: https://salsa.debian.org/xorg-team/debian/xorg
-Homepage: https://www.x.org/
+Vcs-Git: https://github.com/xlibre-deb/xlibre.git
+Vcs-Browser: https://github.com/xlibre-deb/xlibre
+Homepage: https://github.com/X11Libre
 
-Package: xserver-xorg
+Package: xserver-xlibre
 Architecture: any
 Depends:
- xserver-xorg-core,
- xserver-xorg-legacy [!linux-any],
- xserver-xorg-video-all | xorg-driver-video,
- xserver-xorg-input-all | xorg-driver-input,
+ xserver-xlibre-core,
+ xserver-xlibre-legacy [!linux-any],
+ xserver-xlibre-video-all | xlibre-driver-video,
+ xserver-xlibre-input-all | xlibre-driver-input,
  ${shlibs:Depends},
  ${misc:Depends},
  xkb-data,
  x11-xkb-utils
 Recommends:
  libgl1-mesa-dri,
- xserver-xorg-legacy [linux-any],
-Provides: xserver
+ xserver-xlibre-legacy [linux-any],
+Provides:
+ xserver-xorg,
+ xserver
 Description: X.Org X server
  This package depends on the full suite of the server and drivers for the
  X.Org X server.  It does not provide the actual server itself.
+Conflicts:
+ xserver-xorg,
 
-Package: xserver-xorg-video-all
+Package: xserver-xlibre-video-all
 Architecture: any
 Depends:
- xserver-xorg-video-amdgpu [!hurd-any !kfreebsd-any !s390x],
- xserver-xorg-video-ati [!hurd-any !s390x],
- xserver-xorg-video-fbdev [!s390x],
- xserver-xorg-video-dummy [s390x],
- xserver-xorg-video-nouveau [amd64 arm64 armhf i386 powerpc x32],
- xserver-xorg-video-vesa [any-amd64 any-i386],
- xserver-xorg-video-vmware [amd64 hurd-i386 i386 x32],
+ xserver-xlibre-video-amdgpu [!hurd-any !kfreebsd-any !s390x],
+ xserver-xlibre-video-ati [!hurd-any !s390x],
+ xserver-xlibre-video-fbdev [!s390x],
+ xserver-xlibre-video-dummy [s390x],
+ xserver-xlibre-video-nouveau [amd64 arm64 armhf i386 powerpc x32],
+ xserver-xlibre-video-vesa [any-amd64 any-i386],
+ xserver-xlibre-video-vmware [amd64 hurd-i386 i386 x32],
  ${misc:Depends},
 Recommends:
- xserver-xorg-video-intel [amd64 i386 kfreebsd-any x32],
- xserver-xorg-video-qxl [amd64 i386 x32],
+ xserver-xlibre-video-intel [amd64 i386 kfreebsd-any x32],
+ xserver-xlibre-video-qxl [amd64 i386 x32],
 Replaces: xserver-xorg-driver-all
-Conflicts: xserver-xorg-driver-all
+Conflicts:
+ xserver-xorg-video-all,
+ xserver-xlibre-driver-all
 Description: X.Org X server -- output driver metapackage
  This package depends on the full suite of output drivers for the X.Org X server
  (Xorg).  It does not provide any drivers itself, and may be removed if you wish
  to only have certain drivers installed.
+Provides:
+ xserver-xorg-video-all,
 
-Package: xserver-xorg-input-all
+Package: xserver-xlibre-input-all
 Architecture: any
 Depends:
- xserver-xorg-input-kbd [!linux-any],
- xserver-xorg-input-libinput [linux-any],
- xserver-xorg-input-mouse [!linux-any],
- xserver-xorg-input-synaptics [!linux-any],
+ xserver-xlibre-input-kbd [!linux-any],
+ xserver-xlibre-input-libinput [linux-any],
+ xserver-xlibre-input-mouse [!linux-any],
+ xserver-xlibre-input-synaptics [!linux-any],
  ${misc:Depends},
 Recommends:
- xserver-xorg-input-wacom [!hurd-any !kfreebsd-any !s390x],
+ xserver-xlibre-input-wacom [!hurd-any !kfreebsd-any !s390x],
 Description: X.Org X server -- input driver metapackage
  This package depends on the full suite of input drivers for the X.Org X server
  (Xorg).  It does not provide any drivers itself, and may be removed if you wish
  to only have certain drivers installed.
+Provides:
+ xserver-xorg-input-all,
+Conflicts:
+ xserver-xorg-input-all,
 
-Package: xorg
+Package: xlibre
 Architecture: any
 Depends:
- xserver-xorg (>= ${binary:Version}),
+ xserver-xlibre (>= ${binary:Version}),
  libgl1,
  libgl1-mesa-dri,
  libglu1-mesa,
@@ -91,7 +102,9 @@ Depends:
  xorg-docs-core,
  xterm | x-terminal-emulator,
  ${misc:Depends},
-Provides: x-window-system, x-window-system-core
+Provides:
+ xorg,
+ x-window-system, x-window-system-core
 Suggests:
  xorg-docs,
  x11-xfs-utils,
@@ -105,8 +118,10 @@ Description: X.Org X Window System
  .
  It should be noted that a package providing x-window-manager should also
  be installed to ensure a comfortable X experience.
+Conflicts:
+ xorg,
 
-Package: xorg-dev
+Package: xlibre-dev
 Architecture: all
 Depends:
  libfontenc-dev,
@@ -141,7 +156,7 @@ Depends:
  libxxf86dga-dev,
  libxxf86vm-dev,
  x11proto-dev,
- xserver-xorg-dev,
+ xserver-xlibre-dev,
  xtrans-dev,
  ${misc:Depends},
 Description: X.Org X Window System development libraries
@@ -154,3 +169,7 @@ Description: X.Org X Window System development libraries
  .
  Note that this is a convenience package for users and is not a package for
  Debian developers to have their package depend on.
+Provides:
+ xorg-dev,
+Conflicts:
+ xorg-dev,
