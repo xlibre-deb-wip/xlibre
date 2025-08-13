@@ -10,13 +10,13 @@ override_dh_auto_build:
 	$(MAKE) -C xsf-docs
 
 execute_before_dh_install:
-	$(MAKE) -C xsf-docs install DESTDIR=$(CURDIR)/debian/xserver-xorg/usr/share/doc/xorg
+	$(MAKE) -C xsf-docs install DESTDIR=$(CURDIR)/debian/xserver-xlibre/usr/share/doc/xorg
 
 override_dh_installinit-indep:
-	dh_installinit -px11-common
+	dh_installinit
 
-execute_after_dh_fixperms-indep:
-	chmod 755 debian/x11-common/etc/X11/Xreset
-	chmod 755 debian/x11-common/etc/X11/Xsession
+#execute_after_dh_fixperms-indep:
+#	chmod 755 debian/x11-common/etc/X11/Xreset
+#	chmod 755 debian/x11-common/etc/X11/Xsession
 
 # vim:set noet ai sts=8 sw=8 tw=0:
