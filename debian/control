@@ -12,6 +12,22 @@ Vcs-Git: https://github.com/xlibre-deb/xlibre.git
 Vcs-Browser: https://github.com/xlibre-deb/xlibre
 Homepage: https://github.com/X11Libre
 
+Package: x11-common
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}, lsb-base
+Description: X Window System (X.Org) infrastructure
+ x11-common contains the filesystem infrastructure required for further
+ installation of the X Window System in any configuration; it does not
+ provide a full installation of clients, servers, libraries, and utilities
+ required to run the X Window System.
+ .
+ A number of terms are used to refer to the X Window System, including "X",
+ "X Version 11", "X11", "X11R6", and "X11R7".  The version of X used in
+ Debian is derived from the version released by the X.Org Foundation, and
+ is thus often also referred to as "X.Org".  All of the preceding quoted
+ terms are functionally interchangeable in an Debian system.
+
 Package: xserver-xlibre
 Architecture: any
 Depends:
@@ -173,3 +189,47 @@ Provides:
  xorg-dev,
 Conflicts:
  xorg-dev,
+
+Package: xbase-clients
+Architecture: all
+Depends:
+ x11-apps,
+ x11-session-utils,
+ x11-utils,
+ x11-xkb-utils,
+ x11-xserver-utils,
+ xauth,
+ xinit,
+ ${misc:Depends},
+Suggests:
+ x11-xfs-utils,
+Description: miscellaneous X clients - metapackage
+ An X client is a program that interfaces with an X server (almost always via
+ the X libraries), and thus with some input and output hardware like a
+ graphics card, monitor, keyboard, and pointing device (such as a mouse).
+ .
+ This package provides a miscellaneous assortment of several dozen X clients
+ that ship with the X Window System.
+ .
+ This package is provided for transition from earlier Debian releases, the
+ programs formerly in xutils and xbase-clients having been split out in smaller
+ packages.
+
+Package: xutils
+Architecture: all
+Depends:
+ x11-utils,
+ x11-xserver-utils,
+ x11-session-utils,
+ xfonts-utils,
+ ${misc:Depends},
+Suggests:
+ x11-xfs-utils,
+Description: X Window System utility programs metapackage
+ xutils provides a set of utility programs shipped with the X Window System.
+ Many of these programs are useful even on a system that does not have any X
+ clients or X servers installed.
+ .
+ This package is provided for transition from earlier Debian releases, the
+ programs formerly in xutils and xbase-clients having been split out in smaller
+ packages.
