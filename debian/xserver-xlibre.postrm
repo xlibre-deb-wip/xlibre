@@ -8,7 +8,7 @@
 
 set -e
 
-THIS_PACKAGE=xserver-xorg
+THIS_PACKAGE=xserver-xlibre
 THIS_SCRIPT=postrm
 
 CONFIG_DIR=/etc/X11
