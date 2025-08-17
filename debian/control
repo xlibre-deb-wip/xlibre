@@ -28,7 +28,7 @@ Description: X Window System (X.Org) infrastructure
  is thus often also referred to as "X.Org".  All of the preceding quoted
  terms are functionally interchangeable in an Debian system.
 Provides:
- x11-common,
+ x11-common (= ${binary:Version}),
 Conflicts:
  x11-common,
 
@@ -47,7 +47,7 @@ Recommends:
  libgl1-mesa-dri,
  xserver-xlibre-legacy [linux-any],
 Provides:
- xserver-xorg,
+ xserver-xorg (= ${binary:Version}),
  xserver
 Description: XLibre X server
  This package depends on the full suite of the server and drivers for the
@@ -78,7 +78,7 @@ Description: XLibre X server -- output driver metapackage
  (XLibre).  It does not provide any drivers itself, and may be removed if you wish
  to only have certain drivers installed.
 Provides:
- xserver-xorg-video-all,
+ xserver-xorg-video-all (= ${binary:Version}),
 
 Package: xserver-xlibre-input-all
 Architecture: any
@@ -95,7 +95,7 @@ Description: XLibre X server -- input driver metapackage
  (XLibre).  It does not provide any drivers itself, and may be removed if you wish
  to only have certain drivers installed.
 Provides:
- xserver-xorg-input-all,
+ xserver-xorg-input-all (= ${binary:Version}),
 Conflicts:
  xserver-xorg-input-all,
 
@@ -123,7 +123,7 @@ Depends:
  xterm | x-terminal-emulator,
  ${misc:Depends},
 Provides:
- xorg,
+ xorg (= ${binary:Version}),
  x-window-system, x-window-system-core
 Suggests:
  xorg-docs,
@@ -190,7 +190,7 @@ Description: XLibre X Window System development libraries
  Note that this is a convenience package for users and is not a package for
  Debian developers to have their package depend on.
 Provides:
- xorg-dev,
+ xorg-dev (= ${binary:Version}),
 Conflicts:
  xorg-dev,
 
@@ -219,7 +219,7 @@ Description: miscellaneous X clients - metapackage
  programs formerly in xutils and xbase-clients having been split out in smaller
  packages.
 Provides:
- xbase-clients,
+ xbase-clients (= ${binary:Version}),
 Conflicts:
  xbase-clients,
 
@@ -242,6 +242,6 @@ Description: X Window System utility programs metapackage
  programs formerly in xutils and xbase-clients having been split out in smaller
  packages.
 Provides:
- xutils,
+ xutils (= ${binary:Version}),
 Conflicts:
  xutils,
