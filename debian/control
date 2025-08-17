@@ -72,7 +72,7 @@ Recommends:
 Replaces: xserver-xorg-driver-all
 Conflicts:
  xserver-xorg-video-all,
- xserver-xlibre-driver-all
+ xserver-xorg-driver-all,
 Description: XLibre X server -- output driver metapackage
  This package depends on the full suite of output drivers for the XLibre X server
  (XLibre).  It does not provide any drivers itself, and may be removed if you wish
