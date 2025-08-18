@@ -1,3 +1,15 @@
+xlibre (1:7.8+2) unstable; urgency=medium
+
+  * Revert "debian/control: Remove unnecessary packages"
+  * Update x11-common, xbase-clients, xutils for xlibre
+  * debian: Update xlibre.lintian-overrides
+  * Update THIS_PACKAGE in xserver-xlibre.postrm
+  * d/control: Update Conflicts for xserver-xlibre-video-all
+  * debian/control: Pin versions in Provides fields
+  * xsf-docs: Comment out svg-to-png logo conversion
+
+ -- apebl <a@pebl.cc>  Mon, 18 Aug 2025 08:03:59 +0000
+
 xlibre (1:7.8+1) unstable; urgency=low
 
   * Initial release.
