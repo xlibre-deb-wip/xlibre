@@ -41,8 +41,8 @@ pdf: $(pdf_files)
 
 # We usually don't need to run this one, but it's easier to keep both
 # SVN and PNG logos in sync:
-$(PNG_LOGO): $(SVG_LOGO)
-	inkscape $< -e $@
+#$(PNG_LOGO): $(SVG_LOGO)
+#	inkscape $< -e $@
 
 install:
 	@if [ -z "$(DESTDIR)" ]; then \
