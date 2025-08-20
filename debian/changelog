@@ -1,3 +1,9 @@
+xlibre (1:7.8+3) unstable; urgency=medium
+
+  * control: xlibre Recommends xorg-video-abi-25-dummy
+
+ -- apebl <a@pebl.cc>  Wed, 20 Aug 2025 14:28:27 +0000
+
 xlibre (1:7.8+2) unstable; urgency=medium
 
   * Revert "debian/control: Remove unnecessary packages"
