@@ -125,6 +125,8 @@ Depends:
 Provides:
  xorg (= ${binary:Version}),
  x-window-system, x-window-system-core
+Recommends:
+ xorg-video-abi-25-dummy,
 Suggests:
  xorg-docs,
  x11-xfs-utils,
